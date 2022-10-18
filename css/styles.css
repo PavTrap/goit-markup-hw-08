@@ -1,0 +1,323 @@
+
+.head{}
+
+.webstudio{
+    /*position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;*/
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.menu-nav{}
+
+.menu{
+    list-style: none;
+}
+
+.menu-item a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+    cursor: pointer;   
+}
+.menu-item:active a{
+    color: #2196F3;;
+}
+
+.e-mail{
+   /* position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px;*/
+    
+   font-family: 'Roboto';
+   font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    cursor: pointer;
+}
+.e-mail:active{
+    color:#2196F3;
+}
+
+.phone{
+    /*width: 122px;
+    position: absolute;
+    height: 16px;
+    left: 1263px;
+    top: 32px;*/
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    cursor: pointer;
+}
+.phone:active{
+    color: #2196F3;
+}
+
+.section-zagolovok{
+    /*position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;*/
+    background: #2F303A;
+}
+
+
+.zagolovok{
+    /*position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;*/
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /*border: 1px solid #000000;*/
+}
+
+.button-order{
+    border: 0;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    width: 216px;
+    height: 50px;
+    /*position: absolute;
+    left: 692px;
+    top: 430px;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /*display: flex;
+    align-items: center;*/
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+    
+.section-value{
+    /*position: absolute;
+    width: 1170px;
+    height: 98px;
+    left: 215px;
+    top: 774px;*/
+}
+.value{
+    list-style: none;
+}    
+.value-item{}
+    
+.value-zagolovok{
+    /*position: absolute;
+    width: 270px;
+    height: 16px;
+    left: 215px;
+    top: 774px;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.value-opis{
+    /*position: absolute;
+    width: 270px;
+    height: 72px;
+    left: 215px;
+    top: 800px;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.section-whatwedo{
+    /*position: absolute;
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 966px;*/
+}
+
+.zagolovok-whatwedo{
+    /*position: absolute;
+    width: 366px;
+    height: 42px;
+    left: 617px;
+    top: 966px;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.list-whatwedo{
+    list-style: none;
+}
+
+.whatwedo-item{}
+
+.section-komanda{
+    /*position: absolute;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1446px;*/
+    background: #F5F4FA;
+}
+
+.zagolovok-komanda{
+    /*position: absolute;
+    width: 264px;
+    height: 42px;
+    left: 668px;
+    top: 1540px;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.list-komanda{
+    list-style: none;
+}
+
+.komanda-item{
+    /*position: absolute;
+    width: 270px;
+    height: 368px;
+    left: 215px;
+    top: 1632px;*/
+}
+
+.photo-komanda-item{}
+
+.zagolovok-komanda-item{
+    /*position: absolute;
+    width: 129px;
+    height: 19px;
+    left: 286px;
+    top: 1922px;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    //text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.value-komanda-item{
+    /*position: absolute;
+    width: 130px;
+    height: 19px;
+    left: 285px;
+    top: 1951px;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    //text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.futer{
+    /*position: absolute;
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2094px;*/
+    background: #2F303A;
+}
+
+.adres{}
+
+.list-adres{
+    /*position: absolute;
+    width: 231px;
+    height: 81px;
+    left: 215px;
+    top: 2205px;*/
+    list-style: none;
+}
+
+.adres-item-map a{
+    /*position: absolute;
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 2205px;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.adres-item a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
