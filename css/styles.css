@@ -35,7 +35,10 @@
     cursor: pointer;   
 }
 .menu-item:active a{
-    color: #2196F3;;
+    color: #2196F3;
+}
+.menu-item:hover a {
+    color: #2196F3;
 }
 
 .e-mail{
@@ -58,6 +61,9 @@
 .e-mail:active{
     color:#2196F3;
 }
+.e-mail:hover {
+    color: #2196F3;
+}
 
 .phone{
     /*width: 122px;
@@ -79,7 +85,9 @@
 .phone:active{
     color: #2196F3;
 }
-
+.phone:hover {
+    color: #2196F3;
+}
 .section-zagolovok{
     /*position: absolute;
     width: 1600px;
@@ -310,6 +318,13 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+.adres-item-map a:active {
+    color: #2196F3;
+}
+
+.adres-item-map a:hover {
+    color: #2196F3;
+}
 
 .adres-item a{
     font-family: 'Roboto';
@@ -320,4 +335,10 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+.adres-item a:active{
+    color: #2196F3;
+}
+.adres-item a:hover{
+    color: #2196F3;
 }
