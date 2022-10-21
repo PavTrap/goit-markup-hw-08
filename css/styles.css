@@ -1,6 +1,14 @@
 
-.head{}
+body{
+    font-family: 'Roboto';
+    color: #212121;;
+}
 
+
+.head{}
+:root{
+    --brand-color: #2196F3;
+}
 .webstudio{
     /*position: absolute;
     width: 145px;
@@ -12,8 +20,12 @@
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--brand-color);
     text-decoration: none;
+}
+
+.top-logo{
+    color:#000000;
 }
 
 .menu-nav{}
@@ -23,7 +35,7 @@
 }
 
 .menu-item a{
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -33,10 +45,10 @@
     cursor: pointer;   
 }
 .menu-item:active a{
-    color: #2196F3;
+    color: var(--brand-color);
 }
 .menu-item:hover a {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .e-mail{
@@ -46,7 +58,7 @@
     left: 1078px;
     top: 32px;*/
     
-   font-family: 'Roboto';
+   font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -56,10 +68,10 @@
     cursor: pointer;
 }
 .e-mail:active{
-    color:#2196F3;
+    color:var(--brand-color);
 }
 .e-mail:hover {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .phone{
@@ -69,7 +81,7 @@
     left: 1263px;
     top: 32px;*/
     
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -79,10 +91,10 @@
     cursor: pointer;
 }
 .phone:active{
-    color: #2196F3;
+    color: var(--brand-color);
 }
 .phone:hover {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 .section-zagolovok{
     /*position: absolute;
@@ -101,7 +113,7 @@
     left: 452px;
     top: 280px;*/
     
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -114,7 +126,7 @@
 
 .button-order{
     border: 0;
-    background: #2196F3;
+    background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #FFFFFF;
@@ -123,7 +135,7 @@
     /*position: absolute;
     left: 692px;
     top: 430px;*/
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -152,13 +164,13 @@
     height: 16px;
     left: 215px;
     top: 774px;*/
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: inherit;
 }
 
 .value-opis{
@@ -167,7 +179,7 @@
     height: 72px;
     left: 215px;
     top: 800px;*/
-    font-family: 'Roboto';
+    font-family: inherit;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -188,13 +200,13 @@
     height: 42px;
     left: 617px;
     top: 966px;*/
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: inherit;
 }
 
 .list-whatwedo{
@@ -218,13 +230,13 @@
     height: 42px;
     left: 668px;
     top: 1540px;*/
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: inherit;
 }
 
 .list-komanda{
@@ -247,13 +259,13 @@
     height: 19px;
     left: 286px;
     top: 1922px;*/
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     /*text-align: center;*/
     letter-spacing: 0.03em;
-    color: #212121;
+    color: inherit;
 }
 
 .value-komanda-item{
@@ -262,7 +274,7 @@
     height: 19px;
     left: 285px;
     top: 1951px;*/
-    font-family: 'Roboto';
+    font-family: inherit;
     font-size: 16px;
     line-height: 19px;
     /*text-align: center;*/
@@ -277,6 +289,9 @@
     left: 0px;
     top: 2094px;*/
     background: #2F303A;
+}
+.bottom-logo{
+    color: #ffffff;
 }
 
 .adres{}
@@ -296,7 +311,7 @@
     height: 21px;
     left: 215px;
     top: 2205px;*/
-    font-family: 'Roboto';
+    font-family: inherit;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -305,15 +320,15 @@
     font-style: normal;
 }
 .adres-item-map a:active {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .adres-item-map a:hover {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .adres-item a{
-    font-family: 'Roboto';
+    font-family: inherit;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -322,8 +337,8 @@
     font-style: normal;
 }
 .adres-item a:active{
-    color: #2196F3;
+    color: var(--brand-color);
 }
 .adres-item a:hover{
-    color: #2196F3;
+    color: var(--brand-color);
 }

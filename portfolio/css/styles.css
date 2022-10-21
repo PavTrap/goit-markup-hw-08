@@ -1,4 +1,14 @@
+body{
+    font-family: 'Roboto';
+    color: #212121;
+}
+
 .head {}
+
+:root{
+    --brand-color: #2196F3;
+}
+
 .top-logo{
     color:#000000;
 }
@@ -14,7 +24,7 @@
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--brand-color);
     text-decoration: none;
 }
 
@@ -25,22 +35,22 @@
 }
 
 .menu-item a {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: inherit;
     text-decoration: none;
     cursor: pointer;
 }
 
 .menu-item:active a {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .menu-item:hover a {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .e-mail {
@@ -50,7 +60,7 @@
     left: 1078px;
     top: 32px;*/
 
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -61,11 +71,11 @@
 }
 
 .e-mail:active {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .e-mail:hover {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .phone {
@@ -75,7 +85,7 @@
     left: 1263px;
     top: 32px;*/
 
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -86,11 +96,11 @@
 }
 
 .phone:active {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .phone:hover {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .portfolio
@@ -102,27 +112,27 @@
 .filters-item {
     background: #F5F4FA;
     border-radius: 4px;
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     /*text-align: center;*/
     letter-spacing: 0.03em;
-    color: #212121;
+    color: inherit;
     background: #F5F4FA;
     text-decoration: none;
     border: 0;
     cursor: pointer;
 }
 .filters-item:hover {
-    background: #2196F3;
+    background: var(--brand-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: #F5F4FA;
 }
 .filters-item:active {
-    background: #2196F3;
+    background: var(--brand-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: #F5F4FA;
@@ -135,17 +145,17 @@
 .portfolio-item{}
 
 .portfolio-zagolovok{
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: inherit;
 }
 
 .portfolio-value{
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
