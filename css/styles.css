@@ -1,13 +1,14 @@
 
 body{
     font-family: 'Roboto';
-    color: #212121;;
+    color: #212121;
 }
 
 
 .head{}
 :root{
     --brand-color: #2196F3;
+    --font-white-color: #FFFFFF;
 }
 .webstudio{
     /*position: absolute;
@@ -18,7 +19,7 @@ body{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--brand-color);
     text-decoration: none;
@@ -35,65 +36,43 @@ body{
 }
 
 .menu-item a{
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: #212121;
     text-decoration: none;
     cursor: pointer;   
 }
-.menu-item:active a{
+.menu-item:focus a{
     color: var(--brand-color);
 }
 .menu-item:hover a {
     color: var(--brand-color);
 }
-
-.e-mail{
-   /* position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1078px;
-    top: 32px;*/
-    
-   font-family: inherit;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #757575;
-    text-decoration: none;
-    cursor: pointer;
-}
-.e-mail:active{
-    color:var(--brand-color);
-}
-.e-mail:hover {
-    color: var(--brand-color);
-}
-
-.phone{
+ 
+   
+.e-mail-phone{
     /*width: 122px;
     position: absolute;
     height: 16px;
     left: 1263px;
     top: 32px;*/
     
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
     cursor: pointer;
 }
-.phone:active{
+.e-mail-phone:focus{
     color: var(--brand-color);
 }
-.phone:hover {
+.e-mail-phone:hover {
     color: var(--brand-color);
 }
 .section-zagolovok{
@@ -113,14 +92,14 @@ body{
     left: 452px;
     top: 280px;*/
     
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: calc(60 / 44);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--font-white-color);
     /*border: 1px solid #000000;*/
 }
 
@@ -129,7 +108,7 @@ body{
     background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--font-white-color);
     width: 216px;
     height: 50px;
     /*position: absolute;
@@ -138,7 +117,7 @@ body{
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: calc(30 / 16);
     /*display: flex;
     align-items: center;*/
     text-align: center;
@@ -164,10 +143,10 @@ body{
     height: 16px;
     left: 215px;
     top: 774px;*/
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: inherit;
@@ -179,9 +158,9 @@ body{
     height: 72px;
     left: 215px;
     top: 800px;*/
-    font-family: inherit;
+    /* font-family: inherit; */
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: #757575;
 }
@@ -200,10 +179,10 @@ body{
     height: 42px;
     left: 617px;
     top: 966px;*/
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
@@ -230,10 +209,10 @@ body{
     height: 42px;
     left: 668px;
     top: 1540px;*/
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
@@ -259,10 +238,10 @@ body{
     height: 19px;
     left: 286px;
     top: 1922px;*/
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1calc(19 / 16);
     /*text-align: center;*/
     letter-spacing: 0.03em;
     color: inherit;
@@ -274,9 +253,9 @@ body{
     height: 19px;
     left: 285px;
     top: 1951px;*/
-    font-family: inherit;
+    /* font-family: inherit; */
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19 / 16);
     /*text-align: center;*/
     letter-spacing: 0.03em;
     color: #757575;
@@ -291,7 +270,7 @@ body{
     background: #2F303A;
 }
 .bottom-logo{
-    color: #ffffff;
+    color: var(--font-white-color);
 }
 
 .adres{}
@@ -311,15 +290,15 @@ body{
     height: 21px;
     left: 215px;
     top: 2205px;*/
-    font-family: inherit;
+    /* font-family: inherit; */
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--font-white-color);
     text-decoration: none;
     font-style: normal;
 }
-.adres-item-map a:active {
+.adres-item-map a:focus {
     color: var(--brand-color);
 }
 
@@ -328,15 +307,15 @@ body{
 }
 
 .adres-item a{
-    font-family: inherit;
+    /* font-family: inherit; */
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
 }
-.adres-item a:active{
+.adres-item a:focus{
     color: var(--brand-color);
 }
 .adres-item a:hover{
