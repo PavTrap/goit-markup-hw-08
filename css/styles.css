@@ -5,6 +5,12 @@ body{
 }
 
 
+
+/*  -------------------HEADER------------------- */
+
+
+
+
 .head{}
 :root{
     --brand-color: #2196F3;
@@ -75,6 +81,18 @@ body{
 .e-mail-phone:hover {
     color: var(--brand-color);
 }
+
+
+
+
+
+/*-----------------MAIN-------------------*/
+
+
+
+
+
+
 .section-zagolovok{
     /*position: absolute;
     width: 1600px;
@@ -260,6 +278,22 @@ body{
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+
+
+
+
+
+
+
+/* -------------------FOOTER------------------- */
+
+
+
+
+
+
+
 
 .futer{
     /*position: absolute;
