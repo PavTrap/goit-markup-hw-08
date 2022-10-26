@@ -4,7 +4,9 @@ body{
     color: #212121;
 }
 
-
+.container{
+    width: 1200px;
+}
 
 /*  -------------------HEADER------------------- */
 
@@ -17,11 +19,11 @@ body{
     --font-white-color: #FFFFFF;
 }
 .webstudio{
-    /*position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;*/
+    /*position: absolute;*/
+    /* width: 145px; */
+    /* height: 31px; */
+    /*left: 215px;
+    /* top: 24px;*/ 
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -100,16 +102,17 @@ body{
     left: 0px;
     top: 80px;*/
     background: #2F303A;
+    width: 100%;
+    height: 600px;
 }
 
 
 .zagolovok{
-    /*position: absolute;
+    /* position: absolute; */
     width: 696px;
     height: 120px;
-    left: 452px;
-    top: 280px;*/
-    
+    /* left: 452px; */
+    /* top: 280px; */
     /* font-family: inherit; */
     font-weight: 900;
     font-size: 44px;
@@ -118,7 +121,7 @@ body{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--font-white-color);
-    /*border: 1px solid #000000;*/
+    box-sizing: border-box;
 }
 
 .button-order{
@@ -129,18 +132,20 @@ body{
     color: var(--font-white-color);
     width: 216px;
     height: 50px;
-    /*position: absolute;
-    left: 692px;
-    top: 430px;*/
+    /* position: absolute; */
+    /* left: 692px; */
+    /* top: 430px; */
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-    /*display: flex;
-    align-items: center;*/
+    /* display: flex; */
+    /* align-items: center;*/
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 30px;
 }
     
 .section-value{
@@ -149,11 +154,15 @@ body{
     height: 98px;
     left: 215px;
     top: 774px;*/
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 .value{
     list-style: none;
 }    
-.value-item{}
+.value-item{
+    width: 270px;
+}
     
 .value-zagolovok{
     /*position: absolute;
@@ -208,6 +217,8 @@ body{
 
 .list-whatwedo{
     list-style: none;
+    margin-top: 50px;
+    margin-bottom: 94px;
 }
 
 .whatwedo-item{}
@@ -219,14 +230,16 @@ body{
     left: 0px;
     top: 1446px;*/
     background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .zagolovok-komanda{
-    /*position: absolute;
-    width: 264px;
-    height: 42px;
-    left: 668px;
-    top: 1540px;*/
+    /* position: absolute; */
+    /* width: 264px; */
+    /* height: 42px; */
+    /* left: 668px; */
+    /* top: 1540px; */
     /* font-family: inherit; */
     font-weight: 700;
     font-size: 36px;
@@ -234,6 +247,7 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
+    margin-bottom: 50px;
 }
 
 .list-komanda{
@@ -243,9 +257,12 @@ body{
 .komanda-item{
     /*position: absolute;
     width: 270px;
-    height: 368px;
-    left: 215px;
     top: 1632px;*/
+    width: 270px;
+    height: 368px;
+    background: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0px 3px 5px #757575;
 }
 
 .photo-komanda-item{}
@@ -260,9 +277,10 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 1calc(19 / 16);
-    /*text-align: center;*/
+    text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
+    margin-top: 30px;
 }
 
 .value-komanda-item{
@@ -274,9 +292,10 @@ body{
     /* font-family: inherit; */
     font-size: 16px;
     line-height: calc(19 / 16);
-    /*text-align: center;*/
+    text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 10px;
 }
 
 

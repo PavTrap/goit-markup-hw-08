@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,102 +21,108 @@
 </head>
 
 <body>
-    <header class="head">
-        <a class="webstudio" href="">Web<span class="top-logo">Studio</span></a>
-        <nav class="menu-nav">
-            <ul class="menu">
-                <li class="menu-item"><a href="">Студія</a></li>
-                <li class="menu-item"><a href="./portfolio/portfolio.html">Портфоліо</a></li>
-                <li class="menu-item"><a href="">Контакти</a></li>
-            </ul>
-        </nav>
-        <a class="e-mail-phone" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="e-mail-phone" href="tel:+380961111111">+38 096 111 11 11</a>
-    </header>
+    <div class="container">
+        <header class="head">
+            <a class="webstudio" href="">Web<span class="top-logo">Studio</span></a>
+            <nav class="menu-nav">
+                <ul class="menu">
+                    <li class="menu-item"><a href="">Студія</a></li>
+                    <li class="menu-item"><a href="./portfolio/portfolio.html">Портфоліо</a></li>
+                    <li class="menu-item"><a href="">Контакти</a></li>
+                </ul>
+            </nav>
+            <a class="e-mail-phone" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="e-mail-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+        </header>
+    </div>
+
+
+        <main>
+            <section class="section-zagolovok">
+                <h1 class="zagolovok">Ефективні рішення для вашого бізнесу</h1>
+                <button class="button-order" type="button">Замовити послугу</button>
+            </section>
+        <div class="container">
+            <section class="section-value">
+                <ul class="value">
+                    <li class="value-item">
+                        <h3 class="value-zagolovok">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="value-opis">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    </li>
+                    <li class="value-item">
+                        <h3 class="value-zagolovok">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="value-opis">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    </li>
+                    <li class="value-item">
+                        <h3 class="value-zagolovok">ПЛАНУВАННЯ</h3>
+                        <p class="value-opis">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li>
+                    <li class="value-item">
+                        <h3 class="value-zagolovok">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="value-opis">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-whatwedo">
+                <h2 class="zagolovok-whatwedo">Чим ми займаємося</h2>
+                <ul class="list-whatwedo">
+                    <li class="whatwedo-item"><img src="./images/box1.jpg" alt="Друкує код" width="370" height="294"></li>
+                    <li class="whatwedo-item"><img src="./images/box2.jpg" alt="Адаптує для телефону" width="370" height="294"></li>
+                    <li class="whatwedo-item"><img src="./images/box3.jpg" alt="Підбирає колір" width="370" height="294"></li>
+                </ul>
+            </section>
+        </div>
+            
+            <section class="section-komanda">
+                <div class="container">
+                    <h2 class="zagolovok-komanda">Наша команда</h2>
+                    <ul class="list-komanda">
+                    <li class="komanda-item">
+                        <img class="photo-komanda-item" src="./images/img4.jpg" alt="Фото Ігора" width="270" height="260">
+                        <h3 class="zagolovok-komanda-item">Ігор Дем'яненко</h3>
+                        <p class="value-komanda-item" lang="en">Product Designer</p>
+                    </li>
+                    <li class="komanda-item">
+                        <img class="photo-komanda-item" src="./images/img5.jpg" alt="Фото Ольги" width="270" height="260">
+                        <h3 class="zagolovok-komanda-item">Ольга Рєпіна</h3>
+                        <p class="value-komanda-item" lang="en">Frontend Developer</p>
+                    </li>
+                    <li class="komanda-item">
+                        <img class="photo-komanda-item" src="./images/img6.jpg" alt="Фото Миколи" width="270" height="260">
+                        <h3 class="zagolovok-komanda-item">Микола Тарасов</h3>
+                        <p class="value-komanda-item" lang="en">Marketing</p>
+                    </li>
+                    <li class="komanda-item">
+                        <img class="photo-komanda-item" src="./images/img7.jpg" alt="Фото Михайла" width="270" height="260">
+                        <h3 class="zagolovok-komanda-item">Михайло Єрмаков</h3>
+                        <p class="value-komanda-item" lang="en">UI Designer</p>
+                    </li>
+                    </ul>
+                </div>
+            </section>
+            
+        </main>
 
 
 
-    <main>
-        <section class="section-zagolovok">
-            <h1 class="zagolovok">Ефективні рішення для вашого бізнесу</h1>
-            <button class="button-order" type="button">Замовити послугу</button>
-        </section>
-        <section class="section-value">
-            <ul class="value">
-                <li class="value-item">
-                    <h3 class="value-zagolovok">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="value-opis">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                </li>
-                <li class="value-item">
-                    <h3 class="value-zagolovok">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="value-opis">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-                <li class="value-item">
-                    <h3 class="value-zagolovok">ПЛАНУВАННЯ</h3>
-                    <p class="value-opis">Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li class="value-item">
-                    <h3 class="value-zagolovok">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="value-opis">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
-            </ul>
-        </section>
-        <section class="section-whatwedo">
-            <h2 class="zagolovok-whatwedo">Чим ми займаємося</h2>
-            <ul class="list-whatwedo">
-                <li class="whatwedo-item"><img src="./images/box1.jpg" alt="Друкує код" width="370" height="294"></li>
-                <li class="whatwedo-item"><img src="./images/box2.jpg" alt="Адаптує для телефону" width="370" height="294"></li>
-                <li class="whatwedo-item"><img src="./images/box3.jpg" alt="Підбирає колір" width="370" height="294"></li>
-            </ul>
-        </section>
-        <section class="section-komanda">
-            <h2 class="zagolovok-komanda">Наша команда</h2>
-            <ul class="list-komanda">
-                <li class="komanda-item">
-                    <img class="photo-komanda-item" src="./images/img4.jpg" alt="Фото Ігора" width="270" height="260">
-                    <h3 class="zagolovok-komanda-item">Ігор Дем'яненко</h3>
-                    <p class="value-komanda-item" lang="en">Product Designer</p>
-                </li>
-                <li class="komanda-item">
-                    <img class="photo-komanda-item" src="./images/img5.jpg" alt="Фото Ольги" width="270" height="260">
-                    <h3 class="zagolovok-komanda-item">Ольга Рєпіна</h3>
-                    <p class="value-komanda-item" lang="en">Frontend Developer</p>
-                </li>
-                <li class="komanda-item">
-                    <img class="photo-komanda-item" src="./images/img6.jpg" alt="Фото Миколи" width="270" height="260">
-                    <h3 class="zagolovok-komanda-item">Микола Тарасов</h3>
-                    <p class="value-komanda-item" lang="en">Marketing</p>
-                </li>
-                <li class="komanda-item">
-                    <img class="photo-komanda-item" src="./images/img7.jpg" alt="Фото Михайла" width="270" height="260">
-                    <h3 class="zagolovok-komanda-item">Михайло Єрмаков</h3>
-                    <p class="value-komanda-item" lang="en">UI Designer</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-
-
-
-    <footer class="futer">
-        <a class="webstudio" href="">Web<span class="bottom-logo">Studio</span></a>
-        <address class="adres">
-            <ul class="list-adres">
-                <li class="adres-item-map">
-                    <a
-                        href="https://www.google.com/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">м.
+        <footer class="futer">
+            <a class="webstudio" href="">Web<span class="bottom-logo">Studio</span></a>
+            <address class="adres">
+                <ul class="list-adres">
+                    <li class="adres-item-map">
+                        <a href="https://www.google.com/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">м.
                         Київ, пр-т Лесі Українки, 26</a>
-                </li>
-                <li class="adres-item">
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="adres-item">
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-
-            </ul>
-        </address>
-    </footer>
+                    </li>
+                    <li class="adres-item">
+                        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="adres-item">
+                        <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </footer>
+    </div>
 </body>
 
 </html>
