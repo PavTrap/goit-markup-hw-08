@@ -1,29 +1,63 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
 
 body{
     font-family: 'Roboto';
     color: #212121;
 }
 
-.container{
-    width: 1200px;
-}
 
 /*  -------------------HEADER------------------- */
-
-
-
-
-.head{}
 :root{
     --brand-color: #2196F3;
     --font-white-color: #FFFFFF;
 }
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    
+   
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+    padding: 25px 0;
+}
+
 .webstudio{
-    /*position: absolute;*/
-    /* width: 145px; */
-    /* height: 31px; */
-    /*left: 215px;
-    /* top: 24px;*/ 
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -31,20 +65,25 @@ body{
     letter-spacing: 0.03em;
     color: var(--brand-color);
     text-decoration: none;
+    margin-right: 93px;
+    
 }
 
 .top-logo{
     color:#000000;
 }
 
-.menu-nav{}
+.menu-nav{
+    flex-grow: 1;
+}
 
 .menu{
     list-style: none;
+    display: flex;
+    gap: 50px;
 }
 
 .menu-item a{
-    /* font-family: inherit; */
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -59,16 +98,16 @@ body{
 .menu-item:hover a {
     color: var(--brand-color);
 }
- 
-   
+  
+.contacts{
+   list-style: none;
+   display: flex;
+}
+.contacts-item:last-child{
+    margin-left: 50px;
+}
+
 .e-mail-phone{
-    /*width: 122px;
-    position: absolute;
-    height: 16px;
-    left: 1263px;
-    top: 32px;*/
-    
-    /* font-family: inherit; */
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -96,24 +135,21 @@ body{
 
 
 .section-zagolovok{
-    /*position: absolute;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;*/
     background: #2F303A;
     width: 100%;
     height: 600px;
+    padding: 94px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .zagolovok{
-    /* position: absolute; */
+
     width: 696px;
     height: 120px;
-    /* left: 452px; */
-    /* top: 280px; */
-    /* font-family: inherit; */
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -121,7 +157,6 @@ body{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--font-white-color);
-    box-sizing: border-box;
 }
 
 .button-order{
@@ -132,15 +167,10 @@ body{
     color: var(--font-white-color);
     width: 216px;
     height: 50px;
-    /* position: absolute; */
-    /* left: 692px; */
-    /* top: 430px; */
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-    /* display: flex; */
-    /* align-items: center;*/
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
@@ -149,43 +179,30 @@ body{
 }
     
 .section-value{
-    /*position: absolute;
-    width: 1170px;
-    height: 98px;
-    left: 215px;
-    top: 774px;*/
     margin-top: 94px;
     margin-bottom: 94px;
 }
 .value{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }    
 .value-item{
     width: 270px;
 }
     
 .value-zagolovok{
-    /*position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 215px;
-    top: 774px;*/
-    /* font-family: inherit; */
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: inherit;
+    margin-bottom: 10px;
 }
 
 .value-opis{
-    /*position: absolute;
-    width: 270px;
-    height: 72px;
-    left: 215px;
-    top: 800px;*/
-    /* font-family: inherit; */
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -193,54 +210,43 @@ body{
 }
 
 .section-whatwedo{
-    /*position: absolute;
-    width: 1170px;
-    height: 386px;
-    left: 215px;
-    top: 966px;*/
+    margin-bottom: 94px;
 }
 
 .zagolovok-whatwedo{
-    /*position: absolute;
-    width: 366px;
-    height: 42px;
-    left: 617px;
-    top: 966px;*/
-    /* font-family: inherit; */
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
+    margin-bottom: 50px;
 }
 
 .list-whatwedo{
     list-style: none;
     margin-top: 50px;
     margin-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.whatwedo-item{}
+.whatwedo-item{
+
+}
 
 .section-komanda{
-    /*position: absolute;
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 1446px;*/
     background: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+.container-komanda{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .zagolovok-komanda{
-    /* position: absolute; */
-    /* width: 264px; */
-    /* height: 42px; */
-    /* left: 668px; */
-    /* top: 1540px; */
-    /* font-family: inherit; */
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -252,14 +258,12 @@ body{
 
 .list-komanda{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .komanda-item{
-    /*position: absolute;
     width: 270px;
-    top: 1632px;*/
-    width: 270px;
-    height: 368px;
     background: #ffffff;
     border-radius: 7px;
     box-shadow: 0px 3px 5px #757575;
@@ -267,29 +271,21 @@ body{
 
 .photo-komanda-item{}
 
+.komanda-wrap{
+    padding: 30px 60px;
+}
+
+
 .zagolovok-komanda-item{
-    /*position: absolute;
-    width: 129px;
-    height: 19px;
-    left: 286px;
-    top: 1922px;*/
-    /* font-family: inherit; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
-    margin-top: 30px;
 }
 
 .value-komanda-item{
-    /*position: absolute;
-    width: 130px;
-    height: 19px;
-    left: 285px;
-    top: 1951px;*/
-    /* font-family: inherit; */
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -315,35 +311,22 @@ body{
 
 
 .futer{
-    /*position: absolute;
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2094px;*/
     background: #2F303A;
+    padding: 60px 0;
 }
 .bottom-logo{
     color: var(--font-white-color);
 }
 
-.adres{}
+.adres{
+    margin-top: 20px;
+}
 
 .list-adres{
-    /*position: absolute;
-    width: 231px;
-    height: 81px;
-    left: 215px;
-    top: 2205px;*/
     list-style: none;
 }
 
 .adres-item-map a{
-    /*position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2205px;*/
-    /* font-family: inherit; */
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;

@@ -1,3 +1,35 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
 body{
     font-family: 'Roboto';
     color: #212121;
@@ -12,26 +44,26 @@ body{
 
 
 
-
-
-.head {}
-
 :root{
     --brand-color: #2196F3;
     --filters-white-color: #F5F4FA;
     --font-white-color: #FFFFFF;
 }
-
-.top-logo{
-    color:#000000;
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    
+   
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+    padding: 25px 0;
 }
 
-.webstudio {
-    /*position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;*/
+.webstudio{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -39,42 +71,49 @@ body{
     letter-spacing: 0.03em;
     color: var(--brand-color);
     text-decoration: none;
+    margin-right: 93px;
+    
 }
 
-.menu-nav {}
+.top-logo{
+    color:#000000;
+}
 
-.menu {
+.menu-nav{
+    flex-grow: 1;
+}
+
+.menu{
     list-style: none;
+    display: flex;
+    gap: 50px;
 }
 
-.menu-item a {
-    /* font-family: inherit; */
+.menu-item a{
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    color: inherit;
+    color: #212121;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer;   
 }
-
-.menu-item:focus a {
+.menu-item:focus a{
     color: var(--brand-color);
 }
-
 .menu-item:hover a {
     color: var(--brand-color);
 }
+  
+.contacts{
+   list-style: none;
+   display: flex;
+}
+.contacts-item:last-child{
+    margin-left: 50px;
+}
 
-
-.e-mail-phone {
-    /*width: 122px;
-    position: absolute;
-    height: 16px;
-    left: 1263px;
-    top: 32px;*/
-
-    /* font-family: inherit; */
+.e-mail-phone{
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -83,15 +122,12 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
-
-.e-mail-phone:focus {
+.e-mail-phone:focus{
     color: var(--brand-color);
 }
-
 .e-mail-phone:hover {
     color: var(--brand-color);
 }
-
 
 
 
@@ -104,10 +140,19 @@ body{
 
 
 
-.portfolio
+.portfolio{
+    padding: 94px 0;
+}
+
+.portfolio-wrap{
+    margin-bottom: 50px;
+}
 
 .list-filters{
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .filters-item {
@@ -140,12 +185,25 @@ body{
 
 .portfolio-list{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.portfolio-item{}
+.portfolio-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-item-wraper{
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+    border-top: none;
+}
 
 .portfolio-zagolovok{
-    /* font-family: inherit; */
+ 
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -155,7 +213,7 @@ body{
 }
 
 .portfolio-value{
-    /* font-family: inherit; */
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -178,51 +236,31 @@ body{
 
 
 
-
-
-
-
-
-.futer {
-    /*position: absolute;
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2094px;*/
+.futer{
     background: #2F303A;
+    padding: 60px 0;
 }
-
 .bottom-logo{
     color: var(--font-white-color);
 }
 
-.adres {}
+.adres{
+    margin-top: 20px;
+}
 
-.list-adres {
-    /*position: absolute;
-    width: 231px;
-    height: 81px;
-    left: 215px;
-    top: 2205px;*/
+.list-adres{
     list-style: none;
 }
 
 .adres-item-map a{
-    /*position: absolute;
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2205px;*/
-    /* font-family: 'Roboto'; */
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--font-white-color);
     text-decoration: none;
     font-style: normal;
 }
-
-.adres-item-map a:active {
+.adres-item-map a:focus {
     color: var(--brand-color);
 }
 
@@ -231,19 +269,17 @@ body{
 }
 
 .adres-item a{
-    /* font-family: 'Roboto'; */
+    /* font-family: inherit; */
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
 }
-
-.adres-item a:active {
+.adres-item a:focus{
     color: var(--brand-color);
 }
-
-.adres-item a:hover {
+.adres-item a:hover{
     color: var(--brand-color);
 }
