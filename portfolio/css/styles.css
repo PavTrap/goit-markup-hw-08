@@ -50,6 +50,7 @@ body{
     --font-white-color: #FFFFFF;
     --items: 3;
     --ident: 30px;
+    --ident-filter: 8px;
 }
 .container{
     width: 1200px;
@@ -148,13 +149,14 @@ body{
 
 .portfolio-wrap{
     margin-bottom: 50px;
+    /* width: 575px; */
 }
 
 .list-filters{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: var(--ident);
+    gap: var(--ident-filter);
     flex-wrap: wrap;
 }
 
@@ -175,17 +177,9 @@ body{
 
 .list-filters-item{
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
- /* НЕ ПРАЦЮЄ ФОРМУЛА ДЛЯ СПИСКУ З ФІЛЬТРАМИ */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    --ident: 8px;
-    --items: 5;
-    flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
+
+    --items-filter: 5;
+    flex-basis: calc((100% - var(--ident-filter) * var(--items-filter)-1) / var(--items-filter));
 }
 
 
