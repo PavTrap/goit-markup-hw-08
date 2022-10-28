@@ -40,6 +40,8 @@ body{
 :root{
     --brand-color: #2196F3;
     --font-white-color: #FFFFFF;
+    --items: 3;
+    --ident: 30px;
 }
 
 
@@ -228,11 +230,13 @@ body{
     margin-top: 50px;
     margin-bottom: 94px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--ident);
 }
 
 .whatwedo-item{
-
+    flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 }
 
 .section-komanda{
@@ -259,17 +263,25 @@ body{
 .list-komanda{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--ident);
 }
-
 .komanda-item{
     width: 270px;
     background: #ffffff;
     border-radius: 7px;
     box-shadow: 0px 3px 5px #757575;
+
+
+    --items: 4;
+    flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 }
 
-.photo-komanda-item{}
+.photo-komanda-item{
+    width: 100%;
+    height: auto;
+}
 
 .komanda-wrap{
     padding: 30px 60px;

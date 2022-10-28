@@ -48,6 +48,8 @@ body{
     --brand-color: #2196F3;
     --filters-white-color: #F5F4FA;
     --font-white-color: #FFFFFF;
+    --items: 3;
+    --ident: 30px;
 }
 .container{
     width: 1200px;
@@ -152,8 +154,56 @@ body{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: var(--ident);
+    flex-wrap: wrap;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-filters-item{
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+ /* НЕ ПРАЦЮЄ ФОРМУЛА ДЛЯ СПИСКУ З ФІЛЬТРАМИ */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    --ident: 8px;
+    --items: 5;
+    flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .filters-item {
     background: var(--filters-white-color);
@@ -163,7 +213,6 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
-    /*text-align: center;*/
     letter-spacing: 0.03em;
     color: inherit;
     text-decoration: none;
@@ -188,12 +237,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: var(--ident);
 }
 
+img{
+    display: block;
+}
 .portfolio-item{
-    display: flex;
-    flex-direction: column;
+    flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 }
 
 .portfolio-item-wraper{
