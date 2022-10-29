@@ -50,15 +50,12 @@ body{
     margin: 0 auto;
 }
 .container-flex{
-    padding: 25px 0;
     display: flex;
     align-items: center;
     
 }
 .head{
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    padding: 25px 0;
     border-bottom: 1px solid #ECECEC;
     
 }
@@ -190,8 +187,9 @@ body{
 .value{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
+    gap: 30px;
 }    
 .value-item{
     width: 270px;
@@ -229,7 +227,6 @@ body{
 }
 
 .list-whatwedo{
-    width:1200px;
     list-style: none;
     margin-top: 50px;
     margin-bottom: 94px;
