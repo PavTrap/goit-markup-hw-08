@@ -50,20 +50,20 @@ body{
     --font-white-color: #FFFFFF;
     --items: 3;
     --ident: 30px;
-    --ident-filter: 8px;
 }
 .container{
+    padding: 0 15px;
     width: 1200px;
     margin: 0 auto;
-    
-   
 }
-.head{
+.container-flex{
+    padding: 25px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
+}
+.head{
     border-bottom: 1px solid #ECECEC;
-    padding: 25px 0;
 }
 
 .webstudio{
@@ -156,50 +156,17 @@ body{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: var(--ident-filter);
     flex-wrap: wrap;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .list-filters-item{
-
-
-    --items-filter: 5;
-    flex-basis: calc((100% - var(--ident-filter) * var(--items-filter)-1) / var(--items-filter));
+    margin-right: 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.list-filters-item:last-child{
+    margin-right: 0px;
+}
 .filters-item {
+    padding: 6px 22px;
     background: var(--filters-white-color);
     border-radius: 4px;
     font-family: inherit;
@@ -296,7 +263,9 @@ img{
 .list-adres{
     list-style: none;
 }
-
+.adres-item-map{
+    margin-bottom: 9px;
+}
 .adres-item-map a{
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -312,7 +281,9 @@ img{
 .adres-item-map a:hover {
     color: var(--brand-color);
 }
-
+.adres-item {
+    margin-bottom: 9px;
+}
 .adres-item a{
     /* font-family: inherit; */
     font-size: 14px;

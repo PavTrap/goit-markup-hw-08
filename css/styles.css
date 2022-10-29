@@ -44,19 +44,23 @@ body{
     --ident: 30px;
 }
 
-
 .container{
+    padding: 0 15px;
     width: 1200px;
     margin: 0 auto;
-    
-   
 }
-.head{
+.container-flex{
+    padding: 25px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
+}
+.head{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
     border-bottom: 1px solid #ECECEC;
-    padding: 25px 0;
+    
 }
 
 .webstudio{
@@ -136,11 +140,11 @@ body{
 
 
 
-.section-zagolovok{
+.section-caption{
     background: #2F303A;
     width: 100%;
     height: 600px;
-    padding: 94px 0;
+    padding: 200px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,7 +152,7 @@ body{
 }
 
 
-.zagolovok{
+.caption{
 
     width: 696px;
     height: 120px;
@@ -181,8 +185,7 @@ body{
 }
     
 .section-value{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding: 94px 0;
 }
 .value{
     list-style: none;
@@ -194,7 +197,7 @@ body{
     width: 270px;
 }
     
-.value-zagolovok{
+.value-caption{
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -204,7 +207,7 @@ body{
     margin-bottom: 10px;
 }
 
-.value-opis{
+.value-descr{
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -212,10 +215,10 @@ body{
 }
 
 .section-whatwedo{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
-.zagolovok-whatwedo{
+.caption-whatwedo{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -226,6 +229,7 @@ body{
 }
 
 .list-whatwedo{
+    width:1200px;
     list-style: none;
     margin-top: 50px;
     margin-bottom: 94px;
@@ -239,18 +243,18 @@ body{
     flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 }
 
-.section-komanda{
+.section-comand{
     background: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.container-komanda{
+.container-comand{
     width: 1200px;
     margin: 0 auto;
 }
 
-.zagolovok-komanda{
+.caption-comand{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -260,14 +264,14 @@ body{
     margin-bottom: 50px;
 }
 
-.list-komanda{
+.list-comand{
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--ident);
 }
-.komanda-item{
+.comand-item{
     width: 270px;
     background: #ffffff;
     border-radius: 7px;
@@ -278,17 +282,17 @@ body{
     flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 }
 
-.photo-komanda-item{
+.photo-comand-item{
     width: 100%;
     height: auto;
 }
 
-.komanda-wrap{
-    padding: 30px 60px;
+.comand-wrap{
+    padding: 30px 0px;
 }
 
 
-.zagolovok-komanda-item{
+.caption-comand-item{
     font-weight: 500;
     font-size: 16px;
     line-height: 1calc(19 / 16);
@@ -297,7 +301,7 @@ body{
     color: inherit;
 }
 
-.value-komanda-item{
+.value-comand-item{
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -337,8 +341,11 @@ body{
 .list-adres{
     list-style: none;
 }
-
+.adres-item-map{
+    margin-bottom: 9px;
+}
 .adres-item-map a{
+    margin-bottom: 9px;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -353,9 +360,11 @@ body{
 .adres-item-map a:hover {
     color: var(--brand-color);
 }
-
+.adres-item{
+    margin-bottom: 9px;
+}
 .adres-item a{
-    /* font-family: inherit; */
+    margin-bottom: 9px;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
