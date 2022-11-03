@@ -126,7 +126,24 @@ body{
     color: var(--brand-color);
 }
 
-
+.icon-envelope{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    align-items: center;
+}
+.icon-envelope:focus{
+    fill: currentColor
+}
+.icon-envelope:hover{
+    fill: currentColor
+}
+.icon-smartphone{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    align-items: center;
+}
 
 
 
