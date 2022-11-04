@@ -110,6 +110,10 @@ body{
     margin-left: 50px;
 }
 
+
+
+
+
 .e-mail-phone{
     font-weight: 500;
     font-size: 14px;
@@ -122,29 +126,39 @@ body{
 .e-mail-phone:focus{
     color: var(--brand-color);
 }
-.e-mail-phone:hover {
+.e-mail-phone:hover{
     color: var(--brand-color);
 }
+
+
 
 .icon-envelope{
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    align-items: center;
+    /* align-items: center; */
 }
-.icon-envelope:focus{
-    fill: currentColor
+.e-mail-phone:focus>.icon-envelope{
+    fill: var(--brand-color);
 }
-.icon-envelope:hover{
-    fill: currentColor
+.e-mail-phone:hover>.icon-envelope{
+    fill: var(--brand-color);
 }
+
+
+
 .icon-smartphone{
     width: 10px;
     height: 16px;
     margin-right: 10px;
     align-items: center;
 }
-
+.e-mail-phone:focus>.icon-smartphone{
+    fill: var(--brand-color);
+}
+.e-mail-phone:hover>.icon-smartphone{
+    fill: var(--brand-color);
+}
 
 
 /*-----------------MAIN-------------------*/
