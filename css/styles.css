@@ -122,6 +122,9 @@ body{
     color: #757575;
     text-decoration: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .e-mail-phone:focus{
     color: var(--brand-color);
@@ -135,14 +138,12 @@ body{
 .icon-envelope{
     width: 16px;
     height: 12px;
-    margin-right: 10px;
-    /* align-items: center; */
 }
 .e-mail-phone:focus>.icon-envelope{
-    fill: var(--brand-color);
+    fill: currentColor;
 }
 .e-mail-phone:hover>.icon-envelope{
-    fill: var(--brand-color);
+    fill: currentColor;
 }
 
 
@@ -150,14 +151,12 @@ body{
 .icon-smartphone{
     width: 10px;
     height: 16px;
-    margin-right: 10px;
-    align-items: center;
 }
 .e-mail-phone:focus>.icon-smartphone{
-    fill: var(--brand-color);
+    fill: currentColor;
 }
 .e-mail-phone:hover>.icon-smartphone{
-    fill: var(--brand-color);
+    fill: currentColor;
 }
 
 
@@ -177,6 +176,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image:
+        linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -226,6 +232,20 @@ body{
     width: 270px;
 }
     
+.icon-patern{
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-value{
+    width: 70px;
+    height: 70px;
+}
 .value-caption{
     font-weight: 700;
     font-size: 14px;
@@ -336,12 +356,29 @@ body{
     letter-spacing: 0.03em;
     color: #757575;
     margin-top: 10px;
+    margin-bottom: 16px;
 }
 
-
-
-
-
+.socials-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.socials-item{}
+.socials-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+}
+.socials-icon{
+    fill: #AFB1B8;
+}
 
 
 
