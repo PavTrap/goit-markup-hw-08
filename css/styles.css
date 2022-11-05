@@ -366,7 +366,9 @@ body{
     align-items: center;
     gap: 10px;
 }
-.socials-item{}
+.socials-item{
+
+}
 .socials-link{
     display: flex;
     justify-content: center;
@@ -375,12 +377,59 @@ body{
     height: 44px;
     border-radius: 50%;
     background: #fff;
+    color: #AFB1B8;
 }
 .socials-icon{
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
+.socials-link:hover,
+.socials-link:focus{
+    background-color: #2196F3;
+    color: #fff;
+}
 
+.clients{
+    padding: 94px 0 94px 0;
+}
+.clients-caption{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 66px;
+}
+.clients-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.lients-item{
+}
+.clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 5px;
+    background: #fff;
+    color: #AFB1B8;
+
+    border: 1px solid #AFB1B8;
+}
+.sclients-icon{
+    fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus{
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
 
 /* -------------------FOOTER------------------- */
 
@@ -442,4 +491,52 @@ body{
 }
 .adres-item a:hover{
     color: var(--brand-color);
+}
+
+
+.container-flex-futer{
+    display: flex;
+}
+.link-futer{
+    margin-top: 12px;
+}
+.link-futer-caption{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    margin-bottom: 20px;
+}
+
+
+.socials-list-futer{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.socials-item-futer{
+
+}
+.socials-link-futer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff
+}
+.socials-icon-futer{
+    fill: currentColor;
+}
+
+.socials-link-futer:hover,
+.socials-link-futer:focus{
+    background-color: #2196F3;
+    color: #fff;
 }
