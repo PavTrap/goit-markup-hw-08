@@ -101,7 +101,7 @@ body{
     text-decoration: none;
     cursor: pointer;   
 }
-.menu-item:focus a{
+.menu-item:focus a {
     color: var(--brand-color);
 }
 .menu-item:hover a {
@@ -140,6 +140,7 @@ body{
 .icon-envelope{
     width: 16px;
     height: 12px;
+    fill: #757575;
 }
 .e-mail-phone:focus>.icon-envelope{
     fill: currentColor;
@@ -153,6 +154,7 @@ body{
 .icon-smartphone{
     width: 10px;
     height: 16px;
+    fill: #757575;
 }
 .e-mail-phone:focus>.icon-smartphone{
     fill: currentColor;
@@ -178,7 +180,6 @@ body{
 
 .portfolio-wrap{
     margin-bottom: 50px;
-    /* width: 575px; */
 }
 
 .list-filters{
@@ -237,8 +238,11 @@ img{
     flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 }
 .portfolio-item:hover,.portfolio-item:focus{
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
+
 
 .portfolio-item-wraper{
     border: 1px solid #EEEEEE;
@@ -337,6 +341,7 @@ img{
 }
 .link-futer{
     margin-top: 12px;
+    margin-left: 70px;
 }
 .link-futer-caption{
     font-weight: 700;
