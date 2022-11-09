@@ -40,8 +40,15 @@
     <main>
             <section class="section-caption">
                 <h1 class="caption">Ефективні рішення для вашого бізнесу</h1>
-                <button class="button-order" type="button">Замовити послугу</button>
+                <button class="button-order" type="button" data-modal-open>Замовити послугу</button>
             </section>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="close-modal" data-modal-close></button>
+                </div>
+            </div>
+
             <section class="section-value">
                 <div class="container">
                     <ul class="value">
@@ -68,13 +75,26 @@
                     </ul>
                 </div>
             </section>
+
             <section class="section-whatwedo">
                 <div class="container">
                     <h2 class="caption-whatwedo">Чим ми займаємося</h2>
                     <ul class="list-whatwedo">
-                        <li class="whatwedo-item"><img src="./images/box1.jpg" alt="Друкує код" width="370" height="294"></li>
-                        <li class="whatwedo-item"><img src="./images/box2.jpg" alt="Адаптує для телефону" width="370" height="294"></li>
-                        <li class="whatwedo-item"><img src="./images/box3.jpg" alt="Підбирає колір" width="370" height="294"></li>
+                        <li class="whatwedo-item">
+                            <div class="overlay-whatwedo"><p>десктопні додатки</p></div>
+                            <img src="./images/box1.jpg" alt="Друкує код" width="370" height="294">
+                            <!-- <div class="overlay-whatwedo">десктопні додатки</div> -->
+                        </li>
+                        <li class="whatwedo-item">
+                            <div class="overlay-whatwedo"><p>мобільні додатки</p></div>
+                            <img src="./images/box2.jpg" alt="Адаптує для телефону" width="370" height="294">
+                            <!-- <div class="overlay-whatwedo">мобільні додатки</div> -->
+                        </li>
+                        <li class="whatwedo-item">
+                            <div class="overlay-whatwedo"><p>дизайнерські рішення</p></div>
+                            <img src="./images/box3.jpg" alt="Підбирає колір" width="370" height="294">
+                            <!-- <div class="overlay-whatwedo">дизайнерські рішення</div> -->
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -170,6 +190,7 @@
                     </ul>
                 </div>
             </section>
+
             <section class="clients">
                 <div class="container">
                     <h3 class="clients-caption">Постійні клієнти</h3>
@@ -227,6 +248,8 @@
         </div>
      </footer>
     
+
+     <script src="./js/modal.js"></script>
 </body>
 
 </html>
