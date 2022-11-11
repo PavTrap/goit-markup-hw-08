@@ -42,6 +42,7 @@ body{
     --font-white-color: #FFFFFF;
     --items: 3;
     --ident: 30px;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .container{
@@ -87,6 +88,8 @@ body{
 }
 
 
+
+
 .link-menu{
     position: relative;
     font-weight: 500;
@@ -97,13 +100,16 @@ body{
     text-decoration: none;
     cursor: pointer; 
     padding-bottom: 33px; 
+
+    transition: color 250ms var(--transition-timing-function);
 }
 .link-menu:focus,
 .link-menu:hover{
     color: var(--brand-color);
+
+    transform: transition;
 }
-.link-menu:focus::after,
-.link-menu:hover::after{
+.link-menu::after{
     content: "";
     position: absolute;
     display: block;
@@ -111,11 +117,44 @@ body{
     height: 4px;
     bottom: 0;
 
+    background: var(--brand-color);
+    border-radius: 2px;
+
+    opacity: 0;
+    transition: opacity 250ms var(--transition-timing-function);
+}
+.link-menu:focus::after,
+.link-menu:hover::after{
+    opacity:1;
+    
+}
+.link-menu-now{
+    position: relative;
+    color: var(--brand-color);
+    padding-bottom: 33px; 
+
+
+    transition: color 250ms var(--transition-timing-function);
+}
+.link-menu-now::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
 
     background: var(--brand-color);
     border-radius: 2px;
+    opacity:1
 }
+
+
+
+
   
+
+
 .contacts{
    list-style: none;
    display: flex;
@@ -139,13 +178,15 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: color 250ms var(--transition-timing-function);
 }
-.e-mail-phone:focus{
-    color: var(--brand-color);
-}
+.e-mail-phone:focus,
 .e-mail-phone:hover{
     color: var(--brand-color);
+
+    transform: transition;
 }
+
 
 
 
@@ -154,12 +195,11 @@ body{
     height: 12px;
     fill: #757575;
 }
-.e-mail-phone:focus>.icon-envelope{
-    fill: currentColor;
-}
+.e-mail-phone:focus>.icon-envelope,
 .e-mail-phone:hover>.icon-envelope{
     fill: currentColor;
 }
+
 
 
 
@@ -168,12 +208,11 @@ body{
     height: 16px;
     fill: #757575;
 }
-.e-mail-phone:focus>.icon-smartphone{
-    fill: currentColor;
-}
+.e-mail-phone:focus>.icon-smartphone,
 .e-mail-phone:hover>.icon-smartphone{
     fill: currentColor;
 }
+
 
 
 /*-----------------MAIN-------------------*/
@@ -242,12 +281,18 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+
+    transition: opacity 500ms var(--transition-timing-function),
+                visibility 500ms var(--transition-timing-function);
+
 }
 .backdrop.is-hidden{
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
+
+
 .modal{
     position: absolute;
     left: 50%;
@@ -259,7 +304,16 @@ body{
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    transition: transform 500ms var(--transition-timing-function),
+                opacity 500ms var(--transition-timing-function);
 }
+
+.backdrop.is-hidden .modal{
+    opacity: 0;
+    transform: translateX(-50%) translateY(-60%);
+}
+
 .close-modal{
     position: absolute;
     top: 8px;
@@ -268,13 +322,12 @@ body{
     height: 30px;
     
     display: inline-flex;
+    align-items: center;
+    justify-content: cente r;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
     cursor: pointer;
-    background-image: url(.././images/close-modal.jpg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
 }
 
 
@@ -457,6 +510,9 @@ body{
     border-radius: 50%;
     background: #fff;
     color: #AFB1B8;
+
+    transition: background 250ms var(--transition-timing-function),
+                color 250ms var(--transition-timing-function);
 }
 .socials-icon{
     fill: currentColor;
@@ -466,6 +522,8 @@ body{
 .socials-link:focus{
     background-color: #2196F3;
     color: #fff;
+
+    transform: transition;
 }
 
 .clients{
@@ -500,6 +558,9 @@ body{
     color: #AFB1B8;
 
     border: 1px solid #AFB1B8;
+
+    transition: color 250ms var(--transition-timing-function),
+                border 250ms var(--transition-timing-function);
 }
 .sclients-icon{
     fill: currentColor;
@@ -508,6 +569,7 @@ body{
 .clients-link:focus{
     border: 1px solid #2196F3;
     color: #2196F3;
+    transform: transition;
 }
 
 /* -------------------FOOTER------------------- */
@@ -545,13 +607,17 @@ body{
     color: var(--font-white-color);
     text-decoration: none;
     font-style: normal;
+
+    transition: color 250ms var(--transition-timing-function);
 }
 .adres-item-map a:focus {
     color: var(--brand-color);
+    transform: trnsition;
 }
 
 .adres-item-map a:hover {
     color: var(--brand-color);
+    transform: transition;
 }
 .adres-item{
     margin-bottom: 9px;
@@ -564,12 +630,16 @@ body{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal;
+
+    transition: color 250ms var(--transition-timing-function);
 }
 .adres-item a:focus{
     color: var(--brand-color);
+    transform: transition;
 }
 .adres-item a:hover{
     color: var(--brand-color);
+    transform: transition;
 }
 
 
@@ -609,8 +679,11 @@ body{
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    color: #fff
+    color: #fff;
+
+    transition:  background 250ms var(--transition-timing-function);
 }
+
 .socials-icon-futer{
     fill: currentColor;
 }
@@ -619,6 +692,8 @@ body{
 .socials-link-futer:focus{
     background-color: #2196F3;
     color: #fff;
+
+    transform: transition;
 }
 
 

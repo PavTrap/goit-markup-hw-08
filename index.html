@@ -23,7 +23,7 @@
                 <a class="webstudio" href="">Web<span class="top-logo">Studio</span></a>
                 <nav class="menu-nav">
                     <ul class="menu">
-                        <li class="menu-item"><a class="link-menu" href="">Студія</a></li>
+                        <li class="menu-item"><a class="link-menu link-menu-now" href="">Студія</a></li>
                         <li class="menu-item"><a class="link-menu" href="./portfolio/portfolio.html">Портфоліо</a></li>
                         <li class="menu-item"><a class="link-menu" href="">Контакти</a></li>
                     </ul>
@@ -44,8 +44,13 @@
             </section>
 
             <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button class="close-modal" data-modal-close></button>
+                <div class="modal-hidden-move">
+                    <div class="modal">
+                        <button class="close-modal" data-modal-close>
+                            <svg class="close-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                            </svg></button>
+                    </div>
                 </div>
             </div>
 
