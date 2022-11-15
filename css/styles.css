@@ -307,6 +307,8 @@ body{
 
     transition: transform 500ms var(--transition-timing-function),
                 opacity 500ms var(--transition-timing-function);
+    
+    padding: 40px;
 }
 
 .backdrop.is-hidden .modal{
@@ -323,12 +325,48 @@ body{
     
     display: inline-flex;
     align-items: center;
-    justify-content: cente r;
+    justify-content: center;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
     cursor: pointer;
 }
+
+.close-modal:hover{
+    fill: var(--brand-color);
+}
+
+
+.modal-data{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+
+.form-field-modal{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -588,7 +626,9 @@ body{
 .bottom-logo{
     color: var(--font-white-color);
 }
-
+.container-adres{
+    width: 231px;
+}
 .adres{
     margin-top: 20px;
 }
@@ -622,6 +662,7 @@ body{
 .adres-item{
     margin-bottom: 9px;
 }
+
 .adres-item a{
     margin-bottom: 9px;
     font-size: 14px;
@@ -696,4 +737,60 @@ body{
     transform: transition;
 }
 
-
+.subscribe{
+    margin-top: 12px;
+    margin-left: 93px;
+}
+.subscribe-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.form-button-field{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.form-field{
+    width: 358px;
+    height: 50px;
+    left: 815px;
+    top: 2784px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: rgba(33, 150, 243, 0);
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: var(--font-white-color);
+}
+.subscribe-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    background-color: var(--brand-color);
+    border: 0px;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px 28px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.subscribe-text{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height:calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--font-white-color);
+}
+.subscribe-icon{
+    fill: var(--font-white-color)
+}
