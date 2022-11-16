@@ -389,11 +389,13 @@ body{
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+    transition: fill 250ms var(--transition-timing-function);
 }
 
 .input-modal:focus + .icon-input-modal,
 .input-modal:not(:placeholder-shown) + .icon-input-modal{
     fill: var(--brand-color);
+    transform: transition;
 }
 .label-field-modal-textarea{
     display: flex;
@@ -446,6 +448,7 @@ body{
     border: 1px solid black;
     border-radius: 2px;
     margin-right: 10px;
+    transition: background 250ms var(--transition-timing-function);
 
 }
 .check-text{
@@ -471,6 +474,8 @@ body{
     background-color: var(--brand-color);
     background-origin: border-box;
     border: 1px solid var(--brand-color);
+
+    transform: transition;
 }
 
 
@@ -482,7 +487,6 @@ body{
     border-radius: 4px;
     border:none;
     box-shadow: rgba(0, 0, 0, 0.15);
-    text-transform: capitalize;
     padding: 10px 52px;
 
     font-weight: 700;
@@ -490,6 +494,7 @@ body{
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
     color: var(--font-white-color);
+    cursor: pointer;
 }
 
 
