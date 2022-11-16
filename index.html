@@ -62,24 +62,63 @@
                                 <use href="./images/symbol-defs.svg#icon-close-black"></use>
                             </svg></button>
                             <p class="modal-data">Залиште свої дані, ми вам передзвонимо</p>
-                            <form class="">
-                                <label for="" class="form-field-modal">
-                                    <span class="">ім'я</span>
-                                    <input type="text">
+                            <form class="form-modal" autocomplete="off">
+                                <label for="" class="label-field-modal">
+                                    <span class="label-name-modal">Ім'я</span>
+                                    <div class="form-field-modal">
+                                        <input 
+                                            type="text"
+                                            class="input-modal"
+                                            name="name"
+                                            placeholder=" ">
+                                        <svg class="icon-input-modal" width="18px" height="18px"><use href="./images/symbol-defs.svg#icon-person"></use></svg>                               
+                                    </div>
                                 </label>
-                                <label for="" class="form-field-modal">
-                                    <span class="">телефон</span>
-                                    <input type="tel">
+                                <label for="" class="label-field-modal">
+                                    <span class="label-name-modal">Телефон</span>
+                                    <div class="form-field-modal">
+                                        <input 
+                                            type="tel"
+                                            class="input-modal"
+                                            name="name"
+                                            placeholder=" ">
+                                        <svg class="icon-input-modal" width="18px" height="18px"><use href="./images/symbol-defs.svg#icon-phone"></use></svg>                               
+                                    </div>
                                 </label>
-                                <label for="" class="form-field-modal">
-                                    <span class="">пошта</span>
-                                    <input type="mail">
+                                <label for="" class="label-field-modal">
+                                    <span class="label-name-modal">Пошта</span>
+                                    <div class="form-field-modal">
+                                        <input 
+                                            type="mail"
+                                            class="input-modal"
+                                            name="name"
+                                            placeholder=" ">
+                                        <svg class="icon-input-modal" width="18px" height="18px"><use href="./images/symbol-defs.svg#icon-email"></use></svg>                               
+                                    </div>
                                 </label>
-                                <label for="" class="form-field-modal">
-                                    <span class="">коментар</span>
-                                    <input type="text">
+                                <label for="" class="label-field-modal-textarea">
+                                    <span class="label-name-modal">Коментар</span>
+                                        <textarea 
+                                            type="text"
+                                            class="textarea-input"
+                                            name="name"
+                                            placeholder="Введіть текст"
+                                            rows="7"></textarea>
                                 </label>
                             </form>
+                            <form class="form-check">
+                                <label class="label-check">
+                                    <input 
+                                        type="checkbox"
+                                        class="check"
+                                        name="name"
+                                        value=" ">
+                                    <span class="icon-check"></span>
+                                    <span class="check-text">Погоджуюся з розсилкою та приймаю <a href="" class="check-terms">Умови договору</a></span>
+                                </label>
+                            </form>
+                            <button class="button-send-modal">відправити</button>
+                            
                     </div>
                 </div>
             </div>
