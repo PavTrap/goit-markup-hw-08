@@ -4,13 +4,11 @@
 *::after {
   box-sizing: border-box;
 }
-
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
   padding: 0;
 }
-
 /* Убираем внешние отступы */
 body,
 h1,
@@ -28,12 +26,11 @@ dl,
 dd {
   margin: 0;
 }
-
-
 body{
     font-family: 'Roboto';
     color: #212121;
 }
+
 
 
 /*  -------------------HEADER------------------- */
@@ -53,15 +50,12 @@ body{
 .container-flex{
     display: flex;
     align-items: center;
-    
 }
-.head{
+.header{
     padding: 25px 0;
-    border-bottom: 1px solid #ECECEC;
-    
+    border-bottom: 1px solid #ECECEC;   
 }
-
-.webstudio{
+.logo{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -70,27 +64,20 @@ body{
     color: var(--brand-color);
     text-decoration: none;
     margin-right: 93px;
-    
 }
-
-.top-logo{
+.logo__part{
     color:#000000;
 }
-
-.menu-nav{
+/* ============NAV=========== */
+.nav{
     flex-grow: 1;
 }
-
-.menu{
+.nav__list{
     list-style: none;
     display: flex;
     gap: 50px;
 }
-
-
-
-
-.link-menu{
+.nav__link {
     position: relative;
     font-weight: 500;
     font-size: 14px;
@@ -100,43 +87,36 @@ body{
     text-decoration: none;
     cursor: pointer; 
     padding-bottom: 33px; 
-
     transition: color 250ms var(--transition-timing-function);
 }
-.link-menu:focus,
-.link-menu:hover{
+.nav__link:focus,
+.nav__link:hover{
     color: var(--brand-color);
-
     transform: transition;
 }
-.link-menu::after{
+.nav__link::after{
     content: "";
     position: absolute;
     display: block;
     width: 100%;
     height: 4px;
     bottom: 0;
-
     background: var(--brand-color);
     border-radius: 2px;
-
     opacity: 0;
     transition: opacity 250ms var(--transition-timing-function);
 }
-.link-menu:focus::after,
-.link-menu:hover::after{
+.nav__link:focus::after,
+.nav__link:hover::after{
     opacity:1;
-    
 }
-.link-menu-now{
+.nav__link-now{
     position: relative;
     color: var(--brand-color);
     padding-bottom: 33px; 
-
-
     transition: color 250ms var(--transition-timing-function);
 }
-.link-menu-now::after{
+.nav__link-now::after{
     content: "";
     position: absolute;
     display: block;
@@ -148,26 +128,15 @@ body{
     border-radius: 2px;
     opacity:1
 }
-
-
-
-
-  
-
-
+/* ===========CONTACTS============ */
 .contacts{
    list-style: none;
    display: flex;
 }
-.contacts-item:last-child{
+.contacts__item:last-child{
     margin-left: 50px;
 }
-
-
-
-
-
-.e-mail-phone{
+.contacts__data{
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -180,49 +149,36 @@ body{
     gap: 10px;
     transition: color 250ms var(--transition-timing-function);
 }
-.e-mail-phone:focus,
-.e-mail-phone:hover{
+.contacts__data:focus,
+.contacts__data:hover{
     color: var(--brand-color);
-
     transform: transition;
 }
-
-
-
-
-.icon-envelope{
+.contacts__envelope{
     width: 16px;
     height: 12px;
     fill: #757575;
 }
-.e-mail-phone:focus>.icon-envelope,
-.e-mail-phone:hover>.icon-envelope{
+.contacts__data:focus>.contacts__envelope,
+.contacts__data:hover>.contacts__envelope{
     fill: currentColor;
 }
-
-
-
-
-.icon-smartphone{
+.contacts__smartphone{
     width: 10px;
     height: 16px;
     fill: #757575;
 }
-.e-mail-phone:focus>.icon-smartphone,
-.e-mail-phone:hover>.icon-smartphone{
+.contacts__data:focus>.contacts__smartphone,
+.contacts__data:hover>.contacts__smartphone{
     fill: currentColor;
 }
 
 
 
+
+
 /*-----------------MAIN-------------------*/
-
-
-
-
-
-
-.section-caption{
+.hero{
     background: #2F303A;
     padding: 200px 0;
     display: flex;
@@ -238,10 +194,7 @@ body{
     background-size: cover;
     margin: 0 auto;
 }
-
-
-.caption{
-
+.hero__title{
     width: 696px;
     height: 120px;
     font-weight: 900;
@@ -252,8 +205,7 @@ body{
     text-transform: uppercase;
     color: var(--font-white-color);
 }
-
-.button-order{
+.hero__button{
     border: 0;
     background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -272,6 +224,9 @@ body{
     margin-top: 30px;
 }
 
+
+
+/* ===========MODAL============ */
 .backdrop{
     display: flex;
     justify-content: center;
@@ -290,8 +245,6 @@ body{
     opacity: 0;
     pointer-events: none;
 }
-
-
 .modal{
     position: relative;
     /* left: 50%;
@@ -299,8 +252,6 @@ body{
     transform: translate(-50%, -50%); */
     width: 528px;
     height: 581px;
-    
-
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -310,23 +261,18 @@ body{
                 opacity 500ms var(--transition-timing-function);
     padding: 40px;
 }
-
 .backdrop.is-hidden .modal{
     opacity: 0;
     /* transform: translateX(-50%) translateY(-70%); */
     transform: rotate(-470deg) scale(0);
-
 }
-
-
-.close-modal{
+.modal__close{
     position: absolute;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
     padding: 0;
-    
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -334,39 +280,32 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
     cursor: pointer;
-
     transition: fill 250ms var(--transition-timing-function);
 }
-
-.close-modal:hover{
+.modal__close:hover{
     fill: var(--brand-color);
     transform: transition;
 }
-
-
-.modal-data{
+.modal__title{
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: #212121;
 }
-
-
-.form-modal{
+.modal__form{
     margin-top: 12px;
     margin-bottom: 20px;
     height: 342px;
 }
-.label-field-modal{
+.modal__lable{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     /* position: relative; */
 }
-.label-name-modal{
+.modal__name{
     /* display: block; */
     font-weight: 400;
     font-size: 12px;
@@ -376,10 +315,10 @@ body{
     margin-bottom: 4px;
 
 }
-.form-field-modal{
+.modal__field{
     position: relative;
 }
-.input-modal{
+.modal__input{
     display: block;
     width: 100%;
     height: 40px;
@@ -387,7 +326,7 @@ body{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-.icon-input-modal{
+.modal__icon{
     display: block;
     position: absolute;
     top: 50%;
@@ -395,13 +334,12 @@ body{
     transform: translateY(-50%);
     transition: fill 250ms var(--transition-timing-function);
 }
-
-.input-modal:focus + .icon-input-modal,
-.input-modal:not(:placeholder-shown) + .icon-input-modal{
+.modal__input:focus + .modal__icon,
+.modal__input:not(:placeholder-shown) + .modal__icon{
     fill: var(--brand-color);
     transform: transition;
 }
-.label-field-modal-textarea{
+.modal__textarea{
     display: flex;
     flex-direction: column;
 
@@ -411,7 +349,7 @@ body{
     letter-spacing: 0.01em;
     color: #757575;
 }
-.textarea-input{
+.modal__textarea-input{
     max-width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -419,24 +357,21 @@ body{
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-
     color: rgba(117, 117, 117, 0.5);
-
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
 }
-
-.form-check{
+.modal__check{
     text-align: center;
     display: block;
     margin-bottom: 30px;
 }
-.label-check{
+.modal__label-check{
     display: inline-flex;
     align-items:center;
 }
-.check{
+.modal__check{
     position:absolute;
     width:1px;
     height:1px;
@@ -446,7 +381,7 @@ body{
     clip:rect(0 0 0 0);
     overflow: hidden;
 }
-.icon-check{
+.modal__icon-check{
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -454,9 +389,8 @@ body{
     border-radius: 2px;
     margin-right: 10px;
     transition: background 250ms var(--transition-timing-function);
-
 }
-.check-text{
+.modal__check-text{
     display: inline-block;
     font-weight: 400;
     font-size: 14px;
@@ -464,7 +398,7 @@ body{
     letter-spacing: 0.03em;
     color: #757575;
 }
-.check-terms{
+.modal__check-terms{
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -472,8 +406,7 @@ body{
     text-decoration-line: underline;
     color: #2196F3;
 }
-
-.check:checked + .icon-check{
+.modal__check:checked + .modal__icon-check{
     background: url(../images/icon-check.svg);
     background-size: contain;
     background-color: var(--brand-color);
@@ -482,9 +415,7 @@ body{
 
     transform: transition;
 }
-
-
-.button-send-modal{
+.modal__send{
     display: block;
     margin: 0 auto;
     background: #188CE8;
@@ -501,21 +432,6 @@ body{
     color: var(--font-white-color);
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
