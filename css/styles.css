@@ -33,7 +33,7 @@ body{
 
 
 
-/*  -------------------HEADER------------------- */
+/* ==========HEADER========== */
 :root{
     --brand-color: #2196F3;
     --font-white-color: #FFFFFF;
@@ -68,7 +68,7 @@ body{
 .logo__part{
     color:#000000;
 }
-/* ============NAV=========== */
+/* ==========NAV========== */
 .nav{
     flex-grow: 1;
 }
@@ -128,7 +128,7 @@ body{
     border-radius: 2px;
     opacity:1
 }
-/* ===========CONTACTS============ */
+/* ==========CONTACTS========== */
 .contacts{
    list-style: none;
    display: flex;
@@ -177,7 +177,7 @@ body{
 
 
 
-/*-----------------MAIN-------------------*/
+/* ==========MAIN========== */
 .hero{
     background: #2F303A;
     padding: 200px 0;
@@ -223,10 +223,7 @@ body{
     box-sizing: border-box;
     margin-top: 30px;
 }
-
-
-
-/* ===========MODAL============ */
+/* ==========MODAL========== */
 .backdrop{
     display: flex;
     justify-content: center;
@@ -362,7 +359,7 @@ body{
     border-radius: 4px;
     resize: none;
 }
-.modal__check{
+.modal__form-check{
     text-align: center;
     display: block;
     margin-bottom: 30px;
@@ -385,7 +382,7 @@ body{
     display: inline-block;
     width: 15px;
     height: 15px;
-    border: 1px solid black;
+    border: 1px solid #757575;
     border-radius: 2px;
     margin-right: 10px;
     transition: background 250ms var(--transition-timing-function);
@@ -432,29 +429,21 @@ body{
     color: var(--font-white-color);
     cursor: pointer;
 }
-
-
-
-
-
-
-
-    
-.section-value{
+/* ==========VALUE========== */   
+.value{
     padding: 94px 0;
 }
-.value{
+.value__list{
     list-style: none;
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
     gap: 30px;
 }    
-.value-item{
+.value__item{
     width: 270px;
 }
-    
-.icon-patern{
+.value__icon{
     width: 270px;
     height: 120px;
     background: #F5F4FA;
@@ -464,11 +453,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.icon-value{
-    width: 70px;
-    height: 70px;
-}
-.value-caption{
+.value__caption{
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -477,18 +462,17 @@ body{
     color: inherit;
     margin-bottom: 10px;
 }
-
-.value-descr{
+.value__descr{
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: #757575;
 }
-.section-whatwedo{
+/* ==========WHATWEDO========== */
+.whatwedo{
     padding-bottom: 94px;
 }
-
-.caption-whatwedo{
+.whatwedo__title{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -497,8 +481,7 @@ body{
     color: inherit;
     margin-bottom: 50px;
 }
-
-.list-whatwedo{
+.whatwedo__list{
     list-style: none;
     margin-top: 50px;
     margin-bottom: 94px;
@@ -507,13 +490,12 @@ body{
     flex-wrap: wrap;
     gap: var(--ident);
 }
-
-.whatwedo-item{
+.whatwedo__item{
     z-index: -1;
     position: relative;
     flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 }
-.overlay-whatwedo{
+.whatwedo__overlay{
     position: absolute;
     bottom: 4px;
     width: 100%;
@@ -529,19 +511,13 @@ body{
     color: #FFFFFF;
     padding: 27px 0;
 }
-
-.section-comand{
+/* ==========COMAND========== */
+.comand{
     background: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-.container-comand{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.caption-comand{
+.comand__title{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -551,14 +527,14 @@ body{
     margin-bottom: 50px;
 }
 
-.list-comand{
+.comand__list{
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--ident);
 }
-.comand-item{
+.comand__item{
     width: 270px;
     background: #ffffff;
     border-radius: 7px;
