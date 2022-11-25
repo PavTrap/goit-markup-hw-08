@@ -526,7 +526,6 @@ body{
     color: inherit;
     margin-bottom: 50px;
 }
-
 .comand__list{
     list-style: none;
     display: flex;
@@ -538,25 +537,18 @@ body{
     width: 270px;
     background: #ffffff;
     border-radius: 7px;
-   box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
+    box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     --items: 4;
     flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 }
-
-
-
-.photo-comand-item{
+.comand__photo{
     width: 100%;
     height: auto;
 }
-
-.comand-wrap{
+.comand__wrap{
     padding: 30px 0px;
 }
-
-
-.caption-comand-item{
+.comand__caption{
     font-weight: 500;
     font-size: 16px;
     line-height: 1calc(19 / 16);
@@ -564,8 +556,7 @@ body{
     letter-spacing: 0.03em;
     color: inherit;
 }
-
-.value-comand-item{
+.comand__value{
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -574,18 +565,15 @@ body{
     margin-top: 10px;
     margin-bottom: 16px;
 }
-
-.socials-list{
+/* ==========SOCIALS========== */
+.social{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.socials-item{
-
-}
-.socials-link{
+.social__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -598,22 +586,21 @@ body{
     transition: background 250ms var(--transition-timing-function),
                 color 250ms var(--transition-timing-function);
 }
-.socials-icon{
+.social__icon{
     fill: currentColor;
 }
-
-.socials-link:hover,
-.socials-link:focus{
+.social__link:hover,
+.social__link:focus{
     background-color: #2196F3;
     color: #fff;
 
     transform: transition;
 }
-
+/* ==========CLIENTS=========== */
 .clients{
     padding: 94px 0 94px 0;
 }
-.clients-caption{
+.clients__title{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -622,16 +609,14 @@ body{
     color: #212121;
     margin-bottom: 66px;
 }
-.clients-list{
+.clients__list{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-.lients-item{
-}
-.clients-link{
+.clients__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -640,36 +625,33 @@ body{
     border-radius: 5px;
     background: #fff;
     color: #AFB1B8;
-
     border: 1px solid #AFB1B8;
-
     transition: color 250ms var(--transition-timing-function),
                 border 250ms var(--transition-timing-function);
 }
-.sclients-icon{
-    fill: currentColor;
-}
-.clients-link:hover,
-.clients-link:focus{
+.clients__link:hover,
+.clients__link:focus{
     border: 1px solid #2196F3;
     color: #2196F3;
     transform: transition;
 }
-
-/* -------------------FOOTER------------------- */
-
-
-
+.sclients__icon{
+    fill: currentColor;
+}
 
 
 
 
 
+/* ==========FOOTER========== */
 .futer{
     background: #2F303A;
     padding: 60px 0;
 }
-.bottom-logo{
+.container-flex-futer{
+    display: flex;
+}
+.logo__partFooter{
     color: var(--font-white-color);
 }
 .container-adres{
@@ -678,14 +660,13 @@ body{
 .adres{
     margin-top: 20px;
 }
-
-.list-adres{
+.adres__list{
     list-style: none;
 }
-.adres-item-map{
+.adres__map{
     margin-bottom: 9px;
 }
-.adres-item-map a{
+.adres__map a{
     margin-bottom: 9px;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -693,23 +674,17 @@ body{
     color: var(--font-white-color);
     text-decoration: none;
     font-style: normal;
-
     transition: color 250ms var(--transition-timing-function);
 }
-.adres-item-map a:focus {
+.adres__map a:focus,
+.adres__map a:hover {
     color: var(--brand-color);
     transform: trnsition;
 }
-
-.adres-item-map a:hover {
-    color: var(--brand-color);
-    transform: transition;
-}
-.adres-item{
+.adres__item{
     margin-bottom: 9px;
 }
-
-.adres-item a{
+.adres__item a{
     margin-bottom: 9px;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -720,24 +695,17 @@ body{
 
     transition: color 250ms var(--transition-timing-function);
 }
-.adres-item a:focus{
+.adres__item a:focus,
+.adres__item a:hover{
     color: var(--brand-color);
     transform: transition;
 }
-.adres-item a:hover{
-    color: var(--brand-color);
-    transform: transition;
-}
-
-
-.container-flex-futer{
-    display: flex;
-}
-.link-futer{
+/* ==========CONNECT-SOSIALS========== */
+.connect{
     margin-top: 12px;
     margin-left: 70px;
 }
-.link-futer-caption{
+.connect__title{
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -746,35 +714,12 @@ body{
     color: #FFFFFF; 
     margin-bottom: 20px;
 }
-
-
-.socials-list-futer{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.socials-item-futer{
-
-}
+/* ==========SOCIALS-FOOTER========== */
 .socials-link-futer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
-
     transition:  background 250ms var(--transition-timing-function);
 }
-
-.socials-icon-futer{
-    fill: currentColor;
-}
-
 .socials-link-futer:hover,
 .socials-link-futer:focus{
     background-color: #2196F3;
@@ -782,12 +727,12 @@ body{
 
     transform: transition;
 }
-
+/* ==========SUBSCRIBE========== */
 .subscribe{
     margin-top: 12px;
     margin-left: 93px;
 }
-.subscribe-title{
+.subscribe__title{
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -795,13 +740,13 @@ body{
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.form-button-field{
+.subscribe__form{
     margin-top: 20px;
     display: flex;
     align-items: center;
     gap: 12px;
 }
-.form-field{
+.subscribe__field{
     width: 358px;
     height: 50px;
     left: 815px;
@@ -814,7 +759,7 @@ body{
     padding: 15px 16px;
     color: var(--font-white-color);
 }
-.subscribe-button{
+.subscribe__button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -829,7 +774,7 @@ body{
     padding: 10px 28px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.subscribe-text{
+.subscribe__text{
     display: inline-block;
     font-weight: 700;
     font-size: 16px;
@@ -837,7 +782,7 @@ body{
     letter-spacing: 0.06em;
     color: var(--font-white-color);
 }
-.subscribe-icon{
+.subscribe__icon{
     fill: var(--font-white-color)
 }
 
