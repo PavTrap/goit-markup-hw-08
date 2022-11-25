@@ -224,7 +224,7 @@ body{
     box-sizing: border-box;
     margin-top: 30px;
 }
-/* ==========MODAL========== */
+/* ==========MAIN-MODAL========== */
 .backdrop{
     display: flex;
     justify-content: center;
@@ -430,7 +430,7 @@ body{
     color: var(--font-white-color);
     cursor: pointer;
 }
-/* ==========VALUE========== */   
+/* ==========MAIN-VALUE========== */   
 .value{
     padding: 94px 0;
 }
@@ -469,7 +469,7 @@ body{
     letter-spacing: 0.03em;
     color: #757575;
 }
-/* ==========WHATWEDO========== */
+/* ==========MAIN-WHATWEDO========== */
 .whatwedo{
     padding-bottom: 94px;
 }
@@ -512,7 +512,7 @@ body{
     color: #FFFFFF;
     padding: 27px 0;
 }
-/* ==========COMAND========== */
+/* ==========MAIN-COMAND========== */
 .comand{
     background: #F5F4FA;
     padding-top: 94px;
@@ -597,7 +597,7 @@ body{
 
     transform: transition;
 }
-/* ==========CLIENTS=========== */
+/* ==========MAIN-CLIENTS=========== */
 .clients{
     padding: 94px 0 94px 0;
 }
@@ -651,7 +651,7 @@ body{
 .portfolio-wrap{
     margin-bottom: 50px;
 }
-/* ==========FILTERS========== */
+/* ==========PORTFOLIO-FILTERS========== */
 .filters{
     list-style: none;
     display: flex;
@@ -735,7 +735,7 @@ body{
     color: #757575; 
 }
 
-/* ==========OVERLAY-THUMB========== */
+/* ==========PORTFOLIO-OVERLAY-THUMB========== */
 .thumb{
     position: relative;
     overflow: hidden;
