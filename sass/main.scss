@@ -1,5 +1,33 @@
-@import 'utils/vars';
-@import 'base/normalize.scss';
-@import 'base/fonts.scss';
- 
+ //utils
+ @import './utils/vars';
+ @import './utils/container';
+
+
+ //base
+ @import './base/base';
+ @import './base/fonts';
+ @import './base/normalize';
+ @import './base/reset';
+ @import './base/header';
+ @import './base/portfolio';
+ @import './base/futer';
+
+
+ //components
+ @import './components/logo';
+ @import './components/nav';
+ @import './components/contacts';
+ @import './components/hero';
+ @import './components/modal';
+ @import './components/value';
+ @import './components/whatwedo';
+ @import './components/comand';
+ @import './components/socials';
+ @import './components/clients';
+ @import './components/filters';
+ @import './components/projects';
+ @import './components/adres';
+ @import './components/connectIconsStyles';
+ @import './components/subscribe';
+
  

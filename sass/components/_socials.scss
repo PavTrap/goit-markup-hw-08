@@ -1,0 +1,33 @@
+.social {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.social__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #fff;
+	color: #AFB1B8;
+
+	transition: background 250ms var(--transition-timing-function),
+		color 250ms var(--transition-timing-function);
+}
+
+.social__icon {
+	fill: currentColor;
+}
+
+.social__link:hover,
+.social__link:focus {
+	background-color: #2196F3;
+	color: #fff;
+
+	transform: transition;
+}
