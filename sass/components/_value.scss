@@ -1,43 +1,83 @@
 .value {
-	padding: 94px 0;
+	@include section;
+
+	&__list {
+			list-style: none;
+			display: flex;
+			/* justify-content: space-between; */
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+
+	&__item {
+		width: 270px;
+	}
+
+	&__icon {
+		width: 270px;
+		height: 120px;
+		background: #F5F4FA;
+		border-radius: 4px;
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__caption {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: calc(16 / 14);
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: inherit;
+		margin-bottom: 10px;
+	}
+
+	&__descr {
+		font-size: 14px;
+		line-height: calc(24 / 14);
+		letter-spacing: 0.03em;
+		color: #757575;
+	}
 }
 
-.value__list {
-	list-style: none;
-	display: flex;
-	/* justify-content: space-between; */
-	flex-wrap: wrap;
-	gap: 30px;
-}
+// .value__list {
+// 	list-style: none;
+// 	display: flex;
+// 	/* justify-content: space-between; */
+// 	flex-wrap: wrap;
+// 	gap: 30px;
+// }
 
-.value__item {
-	width: 270px;
-}
+// .value__item {
+// 	width: 270px;
+// }
 
-.value__icon {
-	width: 270px;
-	height: 120px;
-	background: #F5F4FA;
-	border-radius: 4px;
-	margin-bottom: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+// .value__icon {
+// 	width: 270px;
+// 	height: 120px;
+// 	background: #F5F4FA;
+// 	border-radius: 4px;
+// 	margin-bottom: 30px;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// }
 
-.value__caption {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: calc(16 / 14);
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: inherit;
-	margin-bottom: 10px;
-}
+// .value__caption {
+// 	font-weight: 700;
+// 	font-size: 14px;
+// 	line-height: calc(16 / 14);
+// 	letter-spacing: 0.03em;
+// 	text-transform: uppercase;
+// 	color: inherit;
+// 	margin-bottom: 10px;
+// }
 
-.value__descr {
-	font-size: 14px;
-	line-height: calc(24 / 14);
-	letter-spacing: 0.03em;
-	color: #757575;
-}
+// .value__descr {
+// 	font-size: 14px;
+// 	line-height: calc(24 / 14);
+// 	letter-spacing: 0.03em;
+// 	color: #757575;
+// }

@@ -1,6 +1,8 @@
  //utils
  @import './utils/vars';
  @import './utils/container';
+ @import './utils/social-colors';
+ @import './utils/mixins';
 
 
  //base
@@ -24,10 +26,11 @@
  @import './components/comand';
  @import './components/socials';
  @import './components/clients';
+ 
  @import './components/filters';
  @import './components/projects';
  @import './components/adres';
- @import './components/connectIconsStyles';
+ @import './components/connect-socials';
  @import './components/subscribe';
 
  

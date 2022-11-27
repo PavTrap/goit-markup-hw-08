@@ -1,30 +1,30 @@
 .contacts {
 	list-style: none;
 	display: flex;
-}
 
-.contacts__item:last-child {
-	margin-left: 50px;
-}
-
-.contacts__data {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: calc(16 / 14);
-	letter-spacing: 0.02em;
-	color: #757575;
-	text-decoration: none;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	transition: color 250ms var(--transition-timing-function);
-}
-
-.contacts__data:focus,
-.contacts__data:hover {
-	color: var(--brand-color);
-	transform: transition;
+	&__item:last-child {
+			margin-left: 50px;
+		}
+	
+	&__data {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: calc(16 / 14);
+		letter-spacing: 0.02em;
+		color: #757575;
+		text-decoration: none;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		transition: color 250ms var(--transition-timing-function);
+	
+		&:focus,
+		&:hover {
+			color: var(--brand-color);
+			transform: transition;
+		}
+	}
 }
 
 .contacts__envelope {
@@ -33,9 +33,13 @@
 	fill: #757575;
 }
 
-.contacts__data:focus>.contacts__envelope,
-.contacts__data:hover>.contacts__envelope {
-	fill: currentColor;
+.contacts__data {
+	&:hover,
+	&:focus{
+		.contacts__envelope{
+			fill: currentColor;
+		}
+	}
 }
 
 .contacts__smartphone {
@@ -44,7 +48,11 @@
 	fill: #757575;
 }
 
-.contacts__data:focus>.contacts__smartphone,
-.contacts__data:hover>.contacts__smartphone {
-	fill: currentColor;
+.contacts__data {
+	&:hover,
+	&:focus {
+		.contacts__smartphone {
+			fill: currentColor;
+		}
+	}
 }

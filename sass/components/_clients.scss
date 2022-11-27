@@ -1,46 +1,89 @@
 .clients {
-	padding: 94px 0 94px 0;
+	@include section;
+
+	&__title {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: calc(42 / 36);
+			text-align: center;
+			letter-spacing: 0.03em;
+			color: #212121;
+			margin-bottom: 66px;
+		}
+	
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 170px;
+		height: 92px;
+		border-radius: 5px;
+		background: #fff;
+		color: #AFB1B8;
+		border: 1px solid #AFB1B8;
+		transition: color 250ms var(--transition-timing-function),
+			border 250ms var(--transition-timing-function);
+
+			&:hover,
+			&:focus {
+				border: 1px solid #2196F3;
+				color: #2196F3;
+				transform: transition;
+			}
+	}
+
+	&__icon {
+		fill: currentColor;
+	}
 }
 
-.clients__title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: calc(42 / 36);
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: #212121;
-	margin-bottom: 66px;
-}
+// .clients__title {
+// 	font-weight: 700;
+// 	font-size: 36px;
+// 	line-height: calc(42 / 36);
+// 	text-align: center;
+// 	letter-spacing: 0.03em;
+// 	color: #212121;
+// 	margin-bottom: 66px;
+// }
 
-.clients__list {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-}
+// .clients__list {
+// 	list-style: none;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	gap: 30px;
+// }
 
-.clients__link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 170px;
-	height: 92px;
-	border-radius: 5px;
-	background: #fff;
-	color: #AFB1B8;
-	border: 1px solid #AFB1B8;
-	transition: color 250ms var(--transition-timing-function),
-		border 250ms var(--transition-timing-function);
-}
+// .clients__link {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	width: 170px;
+// 	height: 92px;
+// 	border-radius: 5px;
+// 	background: #fff;
+// 	color: #AFB1B8;
+// 	border: 1px solid #AFB1B8;
+// 	transition: color 250ms var(--transition-timing-function),
+// 		border 250ms var(--transition-timing-function);
+// }
 
-.clients__link:hover,
-.clients__link:focus {
-	border: 1px solid #2196F3;
-	color: #2196F3;
-	transform: transition;
-}
+// .clients__link:hover,
+// .clients__link:focus {
+// 	border: 1px solid #2196F3;
+// 	color: #2196F3;
+// 	transform: transition;
+// }
 
-.sclients__icon {
-	fill: currentColor;
-}
+// .clients__icon {
+// 	fill: currentColor;
+// }
