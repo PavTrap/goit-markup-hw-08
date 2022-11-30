@@ -825,15 +825,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .filters__item {
   margin-right: 8px;
 }
-
 .filters__item:last-child {
   margin-right: 0px;
 }
-
 .filters__button {
   padding: 6px 22px;
   background: var(--filters-white-color);
@@ -851,9 +848,7 @@ body {
   -webkit-transition: color 250ms var(--transition-timing-function), background 250ms var(--transition-timing-function);
   transition: color 250ms var(--transition-timing-function), background 250ms var(--transition-timing-function);
 }
-
-.filters__button:hover,
-.filters__button:focus {
+.filters__button:hover, .filters__button:focus {
   background: var(--brand-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -875,18 +870,14 @@ body {
           justify-content: center;
   gap: var(--ident);
 }
-
 .portfolio__img {
   display: block;
 }
-
 .portfolio__item {
   -ms-flex-preferred-size: calc((100% - var(--ident) * var(--items)-1) / var(--items));
       flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 }
-
-.portfolio__item:hover,
-.portfolio__item:focus {
+.portfolio__item:hover, .portfolio__item:focus {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
@@ -894,13 +885,11 @@ body {
   -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
 .portfolio__wraper {
   border: 1px solid #EEEEEE;
   padding: 20px 24px;
   border-top: none;
 }
-
 .portfolio__caption {
   font-style: normal;
   font-weight: 700;
@@ -909,7 +898,6 @@ body {
   letter-spacing: 0.06em;
   color: inherit;
 }
-
 .portfolio__value {
   font-style: normal;
   font-weight: 400;
@@ -923,7 +911,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .thumb__overlay {
   position: absolute;
   width: 100%;
@@ -939,12 +926,10 @@ body {
   transition: transform 250ms var(--transition-timing-function);
   transition: transform 250ms var(--transition-timing-function), -webkit-transform 250ms var(--transition-timing-function);
 }
-
 .thumb:hover .thumb__overlay {
   -webkit-transform: translatey(0%);
           transform: translatey(0%);
 }
-
 .thumb__text {
   font-weight: 400;
   font-size: 18px;
@@ -960,15 +945,12 @@ body {
 .adres {
   margin-top: 20px;
 }
-
 .adres__list {
   list-style: none;
 }
-
 .adres__map {
   margin-bottom: 9px;
 }
-
 .adres__map a {
   margin-bottom: 9px;
   font-size: 14px;
@@ -980,18 +962,14 @@ body {
   -webkit-transition: color 250ms var(--transition-timing-function);
   transition: color 250ms var(--transition-timing-function);
 }
-
-.adres__map a:focus,
-.adres__map a:hover {
+.adres__map:hover, .adres__map:focus {
   color: var(--brand-color);
   -webkit-transform: trnsition;
           transform: trnsition;
 }
-
 .adres__item {
   margin-bottom: 9px;
 }
-
 .adres__item a {
   margin-bottom: 9px;
   font-size: 14px;
@@ -1003,19 +981,16 @@ body {
   -webkit-transition: color 250ms var(--transition-timing-function);
   transition: color 250ms var(--transition-timing-function);
 }
-
-.adres__item a:focus,
-.adres__item a:hover {
+.adres__item:hover, .adres__item:focus {
   color: var(--brand-color);
-  -webkit-transform: transition;
-          transform: transition;
+  -webkit-transform: trnsition;
+          transform: trnsition;
 }
 
 .connect {
   margin-top: 12px;
   margin-left: 70px;
 }
-
 .connect__title {
   font-weight: 700;
   font-size: 14px;
@@ -1030,7 +1005,6 @@ body {
   margin-top: 12px;
   margin-left: 93px;
 }
-
 .subscribe__title {
   font-weight: 700;
   font-size: 14px;
@@ -1039,7 +1013,6 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
 .subscribe__form {
   margin-top: 20px;
   display: -webkit-box;
@@ -1050,7 +1023,6 @@ body {
           align-items: center;
   gap: 12px;
 }
-
 .subscribe__field {
   width: 358px;
   height: 50px;
@@ -1066,7 +1038,6 @@ body {
   padding: 15px 16px;
   color: var(--font-white-color);
 }
-
 .subscribe__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1089,7 +1060,6 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 .subscribe__text {
   display: inline-block;
   font-weight: 700;
@@ -1098,7 +1068,6 @@ body {
   letter-spacing: 0.06em;
   color: var(--font-white-color);
 }
-
 .subscribe__icon {
   fill: var(--font-white-color);
 }/*# sourceMappingURL=main.css.map */

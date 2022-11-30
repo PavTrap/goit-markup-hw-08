@@ -1,10 +1,11 @@
-.porfolio{
+
+.portfolio {
 	&__list {
-			list-style: none;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: var(--ident);
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: var(--ident);
 		}
 
 	&__img {
