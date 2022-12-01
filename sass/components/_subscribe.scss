@@ -1,6 +1,14 @@
 .subscribe {
-	margin-top: 12px;
-	margin-left: 93px;
+	// margin-top: 12px;
+	// margin-left: 93px;
+
+	@media (min-width:300px){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 60px;
+	}
 
 	&__title {
 			font-weight: 700;
@@ -12,10 +20,19 @@
 		}
 
 	&__form {
-		margin-top: 20px;
-		display: flex;
-		align-items: center;
-		gap: 12px;
+		// margin-top: 20px;
+		// display: flex;
+		// align-items: center;
+		// gap: 12px;
+
+		@media (min-width: 300px){
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		}
 	}
 
 	&__field {

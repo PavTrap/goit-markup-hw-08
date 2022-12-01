@@ -1,6 +1,10 @@
 .whatwedo {
 	@include section(0, 94px);
 
+	@media (max-width: 767px){
+		display:none;
+	}
+
 	&__title {
 			font-weight: 700;
 			font-size: 36px;
