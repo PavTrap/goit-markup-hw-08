@@ -1,17 +1,18 @@
 .comand {
-	// @include section;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background: #F5F4FA;
-	&__title {
-			// font-weight: 700;
-			// font-size: 36px;
-			// line-height: calc(42 / 36);
-			// text-align: center;
-			// letter-spacing: 0.03em;
-			// color: inherit;
-			// margin-bottom: 50px;
+	@media (min-width: 300px){
+		@include section-mob;
+		background: #F5F4FA;
+	}
+	@media (min-width: 480px){
 
+	}
+	@media (min-width: 767px){
+
+	}
+	@media (min-width: 1200px){
+		@include section;
+	}
+	&__title {
 			@media (min-width: 300px){
 				font-weight: 700;
 				font-size: 28px;
@@ -21,14 +22,37 @@
 				color: inherit;
 				margin-bottom: 30px;
 			}
+			@media (min-width: 480px){
+
+			}
+			@media (min-width: 767px){
+				line-height: calc(33 / 28);
+			}
+			@media (min-width: 1200px){
+				font-size: 36px;
+				line-height: calc(42 / 36);
+				margin-bottom: 50px;
+			}
 		}
 	
 	&__list {
-			list-style: none;
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			gap: var(--ident);
+			
+			@media (min-width: 300px){
+				list-style: none;
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: var(--ident);
+			}
+			@media (min-width: 480px){
+
+			}
+			@media (min-width: 767px){
+
+			}
+			@media (min-width: 1200px){
+
+			}
 		}
 	
 	&__item {
@@ -46,17 +70,49 @@
 			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 			--items: 4;
 			flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
-	
+		}
+		@media (min-width: 480px){
+
+		}
+		@media (min-width: 767px){
+			width: 354px;
+		}
+		@media (min-width: 1200px){
+			width: 270px;
 		}
 	}
 
 	&__photo {
 		width: 100%;
 		height: auto;
+		@media (min-width: 300px){
+
+		}
+		@media (min-width: 480px){
+
+		}
+		@media (min-width: 767px){
+
+		}
+		@media (min-width: 1200px){
+
+		}
 	}
 
 	&__wrap {
 		padding: 30px 0px;
+		@media (min-width: 300px){
+
+		}
+		@media (min-width: 480px){
+
+		}
+		@media (min-width: 767px){
+
+		}
+		@media (min-width: 1200px){
+
+		}
 	}
 
 	&__caption {
@@ -66,6 +122,18 @@
 		text-align: center;
 		letter-spacing: 0.03em;
 		color: inherit;
+		@media (min-width: 300px){
+
+		}
+		@media (min-width: 480px){
+
+		}
+		@media (min-width: 767px){
+
+		}
+		@media (min-width: 1200px){
+
+		}
 	}
 	
 	&__value {
@@ -76,6 +144,18 @@
 		color: #757575;
 		margin-top: 10px;
 		margin-bottom: 16px;
+		@media (min-width: 300px){
+
+		}
+		@media (min-width: 480px){
+
+		}
+		@media (min-width: 767px){
+
+		}
+		@media (min-width: 1200px){
+
+		}
 	}
 }
 

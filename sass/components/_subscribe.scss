@@ -9,6 +9,10 @@
 		justify-content: center;
 		margin-top: 60px;
 	}
+	@media (min-width: 1200px){
+		// margin-top: 12px;
+		margin-left: 93px;
+	}
 
 	&__title {
 			font-weight: 700;
@@ -32,6 +36,14 @@
 			justify-content: center;
 			align-items: center;
 			gap: 20px;
+		}
+		@media (min-width: 1200px){
+			margin-top: 20px;
+			display: flex;
+			flex-direction: initial;
+			justify-content: center;
+			align-items: center;
+			gap: 12px;
 		}
 	}
 

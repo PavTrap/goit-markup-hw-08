@@ -1,7 +1,16 @@
 .value {
-	// @include section;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	@media (min-width: 300px){
+		@include section-mob;
+	}
+	@media (min-width: 480px){
+
+	}
+	@media (min-width: 767px){
+
+	}
+	@media (min-width: 1200px){
+		@include section;
+	}
 
 	&__list {
 			// list-style: none;
@@ -19,7 +28,7 @@
 			@media (min-width: 480px){
 
 			}
-			@media (min-width: 768px){
+			@media (min-width: 767px){
 
 			}
 			@media (min-width: 1200px){
@@ -35,11 +44,11 @@
 		@media (min-width: 480px){
 
 		}
-		@media (min-width: 768px){
-
+		@media (min-width: 767px){
+			width: 354px;
 		}
 		@media (min-width: 1200px){
-
+			width: 270px;
 		}
 	}
 
@@ -96,7 +105,7 @@
 
 		}
 		@media (min-width: 768px){
-
+			text-align: left;
 		}
 		@media (min-width: 1200px){
 

@@ -4,7 +4,6 @@
 }
 
 .container-flex-futer {
-	// display: flex;
 
 	@media (min-width: 300px){
 		display: flex;
@@ -12,5 +11,16 @@
 		align-items: center;
 		justify-content: center;
 	}
+	@media (min-width:480px){
 
+	}
+	@media (min-width:767px){
+		
+	}
+	@media (min-width:1200px){
+		display: flex;
+		flex-direction: row;
+		align-items: initial;
+		justify-content: initial;
+	}
 }

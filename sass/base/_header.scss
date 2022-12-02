@@ -1,4 +1,18 @@
 .header {
-	padding: 25px 0;
-	border-bottom: 1px solid #ECECEC;
+	@media (min-width: 300px){
+		padding: 16px 0;
+		border-bottom: 1px solid #ECECEC;
+	}
+	@media (min-width: 480px){
+		padding: 16px 0;
+		border-bottom: 1px solid #ECECEC;
+	}
+	@media (min-width: 768px){
+		padding: 21px 0;
+		border-bottom: 1px solid #ECECEC;
+	}
+	@media (min-width: 1200px){
+		padding: 25px 0;
+		border-bottom: 1px solid #ECECEC;
+	}
 }

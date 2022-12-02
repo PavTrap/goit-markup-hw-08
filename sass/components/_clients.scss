@@ -1,17 +1,17 @@
 .clients {
-	// @include section;
-	padding-top: 60px;
-	padding-bottom: 60px;
-
+	@media (min-width: 300px){
+		@include section-mob;
+	}
+	@media (min-width: 480px){
+		
+	}
+	@media (min-width: 767px){
+		
+	}
+	@media (min-width: 1200px){
+		@include section;
+	}
 	&__title {
-			font-weight: 700;
-			font-size: 36px;
-			line-height: calc(42 / 36);
-			text-align: center;
-			letter-spacing: 0.03em;
-			color: #212121;
-			margin-bottom: 66px;
-
 			@media (min-width: 300px){
 				font-weight: 700;
 				font-size: 28px;
@@ -20,6 +20,17 @@
 				letter-spacing: 0.03em;
 				color: #212121;
 				margin-bottom: 30px;
+			}
+			@media (min-width:480px){
+
+			}
+			@media (min-width:767px){
+				
+			}
+			@media (min-width:1200px){
+				font-size: 36px;
+				line-height: calc(42 / 36);
+				margin-bottom: 66px;
 			}
 		}
 	
@@ -33,44 +44,57 @@
 	}
 
 	&__link {
-		// display: flex;
-		// justify-content: center;
-		// align-items: center;
-		// width: 170px;
-		// height: 92px;
-		// border-radius: 5px;
-		// background: #fff;
-		// color: #AFB1B8;
-		// border: 1px solid #AFB1B8;
-		// transition: color 250ms var(--transition-timing-function),
-		// 	border 250ms var(--transition-timing-function);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 170px;
+		height: 92px;
+		border-radius: 5px;
+		background: #fff;
+		color: #AFB1B8;
+		border: 1px solid #AFB1B8;
+		transition: color 250ms var(--transition-timing-function),
+			border 250ms var(--transition-timing-function);
 
-		// 	&:hover,
-		// 	&:focus {
-		// 		border: 1px solid #2196F3;
-		// 		color: #2196F3;
-		// 		transform: transition;
-		// 	}
+			&:hover,
+			&:focus {
+				border: 1px solid #2196F3;
+				color: #2196F3;
+				transform: transition;
+			}
 		
-		@media (min-width: 300px){
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 155px;
-			height: 92px;
-			border-radius: 5px;
-			background: #fff;
-			color: #AFB1B8;
-			border: 1px solid #AFB1B8;
-			transition: color 250ms var(--transition-timing-function),
-				border 250ms var(--transition-timing-function);
+			@media (min-width: 300px){
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 155px;
+				height: 92px;
+				border-radius: 5px;
+				background: #fff;
+				color: #AFB1B8;
+				border: 1px solid #AFB1B8;
+				transition: color 250ms var(--transition-timing-function),
+					border 250ms var(--transition-timing-function);
 
-				&:hover,
-				&:focus {
-					border: 1px solid #2196F3;
-					color: #2196F3;
-					transform: transition;
-				}
+					&:hover,
+					&:focus {
+						border: 1px solid #2196F3;
+						color: #2196F3;
+						transform: transition;
+					}
+			@media (min-width:480px){
+				width: 210px;
+				height: 92px;		
+			}
+			@media (min-width:767px){
+				width: 226px;
+				height: 92px;	
+				flex-basis: calc((100% - 30px) / 3);
+			}
+			@media (min-width:1200px){
+				width: 170px;
+				height: 92px;	
+			}
 		}
 
 	}

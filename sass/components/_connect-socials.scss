@@ -1,11 +1,18 @@
 .connect {
 	// margin-top: 12px;
 	// margin-left: 70px;
-	@media (min-width:300px){
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		@media (min-width:300px){
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+		@media(min-width:1200px){
+			margin-top: 12px;
+			margin-left: 70px;
+			justify-content: initial;
+			align-items: initial;
+		}
 	}
 
 	&__title {
