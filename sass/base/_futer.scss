@@ -4,7 +4,7 @@
 }
 
 .container-flex-futer {
-
+	
 	@media (min-width: 300px){
 		display: flex;
 		flex-direction: column;
@@ -15,12 +15,20 @@
 
 	}
 	@media (min-width:767px){
-		
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	@media(min-width:1024px){
+		gap: 50px;
 	}
 	@media (min-width:1200px){
 		display: flex;
 		flex-direction: row;
-		align-items: initial;
-		justify-content: initial;
+		align-items: stretch;
+		justify-content: stretch;
+		gap:initial;
 	}
 }

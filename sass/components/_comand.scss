@@ -72,13 +72,20 @@
 			flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 		}
 		@media (min-width: 480px){
-
+			width: 450px;
+			--items:1;
+			flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
+		
 		}
 		@media (min-width: 767px){
 			width: 354px;
+			--items:2;
+			flex-basis: calc((100% - var(--ident) * var(--items)-1) / var(--items));
 		}
+
 		@media (min-width: 1200px){
 			width: 270px;
+			flex-basis: initial;
 		}
 	}
 
@@ -102,7 +109,7 @@
 	&__wrap {
 		padding: 30px 0px;
 		@media (min-width: 300px){
-
+			
 		}
 		@media (min-width: 480px){
 

@@ -7,6 +7,19 @@
 		flex-direction: column;
 		margin-bottom: 60px;
 	}
+	@media(min-width:480px){
+
+	}
+	@media(min-width:768px){
+		margin-right: 165px;
+	}
+	@media(min-width:1024px){
+		margin-right: 0px;
+	}
+	@media(min-width:1200px){
+		margin-right: 70px;
+		margin-bottom: 0px;
+	}
 }
 
 .adres {

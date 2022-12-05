@@ -9,9 +9,16 @@
 		justify-content: center;
 		margin-top: 60px;
 	}
+	@media(min-width:480px){
+		
+	}
+	@media(min-width:768px){
+		margin-top: 0;
+	}
 	@media (min-width: 1200px){
-		// margin-top: 12px;
+		margin-top: 23px;
 		margin-left: 93px;
+		justify-content: initial;
 	}
 
 	&__title {
