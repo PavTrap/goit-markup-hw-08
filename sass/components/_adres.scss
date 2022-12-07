@@ -19,6 +19,7 @@
 	@media(min-width:1200px){
 		margin-right: 70px;
 		margin-bottom: 0px;
+		align-items: initial;
 	}
 }
 
@@ -33,22 +34,15 @@
 				justify-content: center;
 				align-items: center;
 			}
+			@media (min-width:1200px){
+				align-items: initial;
+			}
 		}
 
 	&__map {
 		margin-bottom: 9px;
 
 		a {
-			// margin-bottom: 9px;
-			// font-size: 14px;
-			// line-height: calc(24 / 14);				
-			// letter-spacing: 0.03em;
-			// color: var(--font-white-color);
-			// text-decoration: none;
-			// font-style: normal;
-			// transition: color 250ms var(--transition-timing-function);
-			
-
 			&:hover,
 			&:focus{
 					color: var(--brand-color);
@@ -74,15 +68,6 @@
 		margin-bottom: 9px;
 
 		a {
-			// margin-bottom: 9px;
-			// font-size: 14px;	
-			// line-height: calc(24 / 14);
-			// letter-spacing: 0.03em;
-			// color: rgba(255, 255, 255, 0.6);
-			// text-decoration: none;
-			// font-style: normal;
-			// transition: color 250ms var(--transition-timing-function);
-
 			@media (min-width: 300px){
 				margin-bottom: 9px;
 				font-size: 14px;	
@@ -93,8 +78,7 @@
 				font-style: normal;
 				transition: color 250ms var(--transition-timing-function);
 				text-align: center;
-			}
-
+				}
 			}
 
 			&:hover,
